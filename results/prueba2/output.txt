@@ -1,0 +1,179 @@
+
+================================================
+SOP v2 — Análisis geométrico de fc
+================================================
+
+Valores SOP observados:
+01_growth_S8         fc=0.742064386984314  f_out=0.257935613015686  angle=267.143°
+02_BAO_SN_full       fc=0.774088414673177  f_out=0.225911585326823  angle=278.672°
+KiDS_like            fc=0.774088414673177  f_out=0.225911585326823  angle=278.672°
+DES_HSC_like         fc=0.740350291572095  f_out=0.259649708427905  angle=266.526°
+DES_Y3_like          fc=0.774088414673177  f_out=0.225911585326823  angle=278.672°
+
+Resumen estadístico:
+N                  = 5
+fc mean            = 0.7609359845151882
+fc median          = 0.7740884146731773
+fc std             = 0.018019900141905295
+fc min             = 0.7403502915720953
+fc max             = 0.7740884146731773
+f_out mean         = 0.23906401548481176
+f_out min/max      = 0.22591158532682265 0.2596497084279047
+activo:afuera mean = 3.201562126596496
+
+================================================
+Comparación contra candidatos
+================================================
+Ranking por RMSE:
+candidato        valor          RMSE          MAE           max_err       rel_mean
+3/4            0.750000000000  0.019477402  0.017970113  0.024088415  0.023960
+sqrt(3/5)      0.774596669241  0.021127890  0.013660685  0.034246378  0.017636
+pi/4           0.785398163397  0.029294567  0.024462179  0.045047872  0.031146
+1/sqrt(2)      0.707106781187  0.056190360  0.053829203  0.066981633  0.076126
+sqrt(2/3)      0.816496580928  0.057851131  0.055560596  0.076146289  0.068048
+cos(30deg)     0.866025403784  0.106318199  0.105089419  0.125675112  0.121347
+2/pi           0.636619772368  0.125356667  0.124316212  0.137468642  0.195275
+sqrt(pi)/2     0.886226925453  0.126323368  0.125290941  0.145876634  0.141376
+phi_inv        0.618033988750  0.143808045  0.142901996  0.156054426  0.231220
+
+================================================
+Foco: sqrt(3/5) vs pi/4
+================================================
+
+01_growth_S8
+fc                   = 0.742064386984314
+diff vs sqrt(3/5)    = -0.032532282257170
+abs diff sqrt(3/5)   = 0.032532282257170
+rel diff sqrt(3/5)   = 4.199900%
+diff vs pi/4         = -0.043333776413134
+abs diff pi/4        = 0.043333776413134
+rel diff pi/4        = 5.517428%
+projection angle if ideal=pi/4      = 19.121559°
+projection angle if ideal=sqrt(3/5) = 16.664371°
+
+02_BAO_SN_full
+fc                   = 0.774088414673177
+diff vs sqrt(3/5)    = -0.000508254568306
+abs diff sqrt(3/5)   = 0.000508254568306
+rel diff sqrt(3/5)   = 0.065615%
+diff vs pi/4         = -0.011309748724271
+abs diff pi/4        = 0.011309748724271
+rel diff pi/4        = 1.440002%
+projection angle if ideal=pi/4      = 9.735129°
+projection angle if ideal=sqrt(3/5) = 2.075698°
+
+KiDS_like
+fc                   = 0.774088414673177
+diff vs sqrt(3/5)    = -0.000508254568306
+abs diff sqrt(3/5)   = 0.000508254568306
+rel diff sqrt(3/5)   = 0.065615%
+diff vs pi/4         = -0.011309748724271
+abs diff pi/4        = 0.011309748724271
+rel diff pi/4        = 1.440002%
+projection angle if ideal=pi/4      = 9.735129°
+projection angle if ideal=sqrt(3/5) = 2.075698°
+
+DES_HSC_like
+fc                   = 0.740350291572095
+diff vs sqrt(3/5)    = -0.034246377669388
+abs diff sqrt(3/5)   = 0.034246377669388
+rel diff sqrt(3/5)   = 4.421188%
+diff vs pi/4         = -0.045047871825353
+abs diff pi/4        = 0.045047871825353
+rel diff pi/4        = 5.735673%
+projection angle if ideal=pi/4      = 19.499695°
+projection angle if ideal=sqrt(3/5) = 17.100954°
+
+DES_Y3_like
+fc                   = 0.774088414673177
+diff vs sqrt(3/5)    = -0.000508254568306
+abs diff sqrt(3/5)   = 0.000508254568306
+rel diff sqrt(3/5)   = 0.065615%
+diff vs pi/4         = -0.011309748724271
+abs diff pi/4        = 0.011309748724271
+rel diff pi/4        = 1.440002%
+projection angle if ideal=pi/4      = 9.735129°
+projection angle if ideal=sqrt(3/5) = 2.075698°
+
+================================================
+Lecturas geométricas derivadas
+================================================
+Si fc es fracción de área: r/R = sqrt(fc)
+Si fc es fracción de volumen: r/R = fc^(1/3)
+Si fc es fracción angular: theta = 360*fc
+
+01_growth_S8
+fc                 = 0.742064386984
+theta activo       = 267.143179°
+theta fuera        = 92.856821°
+r/R area           = 0.861431592
+r/R volume         = 0.905344491
+activo/fuera       = 2.876936528
+
+02_BAO_SN_full
+fc                 = 0.774088414673
+theta activo       = 278.671829°
+theta fuera        = 81.328171°
+r/R area           = 0.879822945
+r/R volume         = 0.918184991
+activo/fuera       = 3.426510480
+
+KiDS_like
+fc                 = 0.774088414673
+theta activo       = 278.671829°
+theta fuera        = 81.328171°
+r/R area           = 0.879822945
+r/R volume         = 0.918184991
+activo/fuera       = 3.426510480
+
+DES_HSC_like
+fc                 = 0.740350291572
+theta activo       = 266.526105°
+theta fuera        = 93.473895°
+r/R area           = 0.860436105
+r/R volume         = 0.904646868
+activo/fuera       = 2.851342665
+
+DES_Y3_like
+fc                 = 0.774088414673
+theta activo       = 278.671829°
+theta fuera        = 81.328171°
+r/R area           = 0.879822945
+r/R volume         = 0.918184991
+activo/fuera       = 3.426510480
+
+================================================
+Distinct aproximado
+================================================
+fc≈0.742064 repeticiones=1 labels=['01_growth_S8']
+fc≈0.774088 repeticiones=3 labels=['02_BAO_SN_full', 'KiDS_like', 'DES_Y3_like']
+fc≈0.74035 repeticiones=1 labels=['DES_HSC_like']
+
+================================================
+Diagnóstico
+================================================
+Mejor candidato por RMSE: 3/4 = 0.75
+Segundo candidato: sqrt(3/5) = 0.7745966692414834
+RMSE mejor: 0.01947740224505896
+RMSE segundo: 0.021127890289629598
+
+Lectura:
+- Si sqrt(3/5) queda primero y muy por debajo de pi/4, la pista apunta más a nodo/partición óptima.
+- Si pi/4 queda cercano, la intuición círculo/cuadrado/anillo sigue siendo una buena lectura geométrica.
+- Si 3/4 queda competitivo, la explicación puede ser simplemente partición 75/25 efectiva.
+- Esto no prueba una geometría; ayuda a elegir qué hipótesis geométrica merece test físico posterior.
+
+
+Generando gráficos PRUEBA 2...
+
+Resumen PRUEBA 2
+N = 5
+fc mean = 0.7609359845151882
+fc median = 0.7740884146731773
+fc min = 0.7403502915720953
+fc max = 0.7740884146731773
+3/4: valor=0.75, RMSE=0.01947740224505896, MAE=0.017970113092624574
+sqrt(3/5): valor=0.7745966692414834, RMSE=0.021127890289629598, MAE=0.013660684726295159
+pi/4: valor=0.7853981633974483, RMSE=0.029294566673140593, MAE=0.024462178882260033
+
+Gráficos PRUEBA 2 generados.

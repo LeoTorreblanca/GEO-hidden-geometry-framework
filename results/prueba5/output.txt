@@ -1,0 +1,849 @@
+Pantheon cargado: 1701
+BAO DR2 puntos: 13
+
+================================================
+SOP MASTER TEST v0
+LCDM vs SOP-min vs MU_LIBRE
+================================================
+
+
+################################################
+TEST: 01_growth_S8
+################################################
+
+Modelo: LCDM
+H0            = 67.00839366475219
+Omega_m       = 0.31492957590620485
+logA          = 3.032176285673847
+sigma8        = 0.8119022375690049
+S8            = 0.8318592211386152
+rd            = 147.30126036603437
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 1.0
+xi_equiv      = 1.0
+Omega_growth  = 0.31492957590620485
+chi_total     = 21.059164073524965
+chi_BAO       = 0.0
+chi_SN        = 0.0
+chi_fs8       = 16.051303708471487
+chi_S8        = 2.954085288722096
+chi_As        = 0.7132664309514107
+chi_rd        = 0.45006372151434315
+chi_ombh2     = 0.25628002755627916
+chi_ommh2     = 0.6341648963093479
+AIC           = 27.059164073524965
+BIC           = 30.83345368758941
+
+Modelo: SOP
+H0            = 66.93156004359444
+Omega_m       = 0.31799789154466046
+logA          = 3.044093669600349
+sigma8        = 0.757803915996969
+S8            = 0.7802042973180384
+rd            = 147.06638845370514
+fc            = 0.7420643869843139
+f_out         = 0.2579356130156861
+mu_eff        = 0.7826205698826935
+xi_equiv      = 0.7420643869843139
+Omega_growth  = 0.2488716911021771
+chi_total     = 11.543903132682663
+chi_BAO       = 0.0
+chi_SN        = 0.0
+chi_fs8       = 11.440997975953694
+chi_S8        = 0.016734784320440097
+chi_As        = 4.476527566098915e-05
+chi_rd        = 0.012552622714787059
+chi_ombh2     = 6.911439091598126e-05
+chi_ommh2     = 0.07350387002716526
+AIC           = 19.543903132682665
+BIC           = 24.576289284768592
+
+Modelo: MU_LIBRE
+H0            = 66.93298437814241
+Omega_m       = 0.3179616668679863
+logA          = 3.043971129908299
+sigma8        = 0.757631589182422
+S8            = 0.7799824470106475
+rd            = 147.06827221693868
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 0.7418009288317394
+xi_equiv      = 0.6936225691831064
+Omega_growth  = 0.23586425981556036
+chi_total     = 11.543681262616815
+chi_BAO       = 0.0
+chi_SN        = 0.0
+chi_fs8       = 11.441189476291562
+chi_S8        = 0.015015274975256456
+chi_As        = 4.252460177623493e-06
+chi_rd        = 0.011185024644286447
+chi_ombh2     = 1.4881273004139432e-06
+chi_ommh2     = 0.07628574611823222
+AIC           = 19.543681262616815
+BIC           = 24.57606741470274
+
+==============================
+RESUMEN TEST: 01_growth_S8
+==============================
+Mejor BIC = MU_LIBRE
+Delta BIC SOP - LCDM = -6.25716440282082
+Delta BIC MU  - LCDM = -6.25738627288667
+Delta BIC MU  - SOP  = -0.00022187006585028257
+SOP fc = 0.7420643869843139
+SOP f_out = 0.2579356130156861
+SOP mu_eff = 0.7826205698826935
+MU xi_equiv = 0.6936225691831064
+MU físico SOP? = True
+
+
+################################################
+TEST: 02_BAO_SN_full
+################################################
+
+Modelo: LCDM
+H0            = 67.19527376635757
+Omega_m       = 0.31171194726388524
+logA          = 3.033232875988148
+sigma8        = 0.8086358009443636
+S8            = 0.8242691804148345
+rd            = 147.3720390440949
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 1.0
+xi_equiv      = 1.0
+Omega_growth  = 0.31171194726388524
+chi_total     = 1821.9195615588417
+chi_BAO       = 39.010260992865526
+chi_SN        = 1759.9763133488595
+chi_fs8       = 14.9429255662068
+chi_S8        = 2.205835529391569
+chi_As        = 0.5914844871765158
+chi_rd        = 0.8222804612451647
+chi_ombh2     = 3.098447768288305
+chi_ommh2     = 1.2720134048081948
+AIC           = 1827.9195615588417
+BIC           = 1844.3044827354674
+
+Modelo: SOP
+H0            = 67.13600955627692
+Omega_m       = 0.31412768482580294
+logA          = 3.044279498292178
+sigma8        = 0.7616893232888812
+S8            = 0.7794178496413635
+rd            = 147.18202923915513
+fc            = 0.7740884146731773
+f_out         = 0.22591158532682265
+mu_eff        = 0.8100469748765068
+xi_equiv      = 0.7740884146731773
+Omega_growth  = 0.25445818081810245
+chi_total     = 1814.333368586101
+chi_BAO       = 41.34620427045897
+chi_SN        = 1759.240787487477
+chi_fs8       = 11.30404303087504
+chi_S8        = 0.011059594008017554
+chi_As        = 0.0003985678333187596
+chi_rd        = 0.0747644008485563
+chi_ombh2     = 1.855558754641768
+chi_ommh2     = 0.5005524799582045
+AIC           = 1822.333368586101
+BIC           = 1844.1799301549352
+
+Modelo: MU_LIBRE
+H0            = 67.13305653869485
+Omega_m       = 0.31427594424284055
+logA          = 3.0428026129587935
+sigma8        = 0.7619596550730376
+S8            = 0.7798784486783947
+rd            = 147.16928352242107
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 0.7762183171547637
+xi_equiv      = 0.733879676858467
+Omega_growth  = 0.24394674456240206
+chi_total     = 1814.3308128852696
+chi_BAO       = 41.48585896152903
+chi_SN        = 1759.196968447417
+chi_fs8       = 11.308322889840685
+chi_S8        = 0.01424129150385009
+chi_As        = 0.007314978196170071
+chi_rd        = 0.0533356275452384
+chi_ombh2     = 1.8019411390481295
+chi_ommh2     = 0.46282955018935884
+AIC           = 1822.3308128852696
+BIC           = 1844.1773744541038
+
+==============================
+RESUMEN TEST: 02_BAO_SN_full
+==============================
+Mejor BIC = MU_LIBRE
+Delta BIC SOP - LCDM = -0.12455258053228135
+Delta BIC MU  - LCDM = -0.12710828136368946
+Delta BIC MU  - SOP  = -0.002555700831408103
+SOP fc = 0.7740884146731773
+SOP f_out = 0.22591158532682265
+SOP mu_eff = 0.8100469748765068
+MU xi_equiv = 0.733879676858467
+MU físico SOP? = True
+
+
+################################################
+TEST: 04_weak_lensing_prior_KiDS_like
+################################################
+
+Modelo: LCDM
+H0            = 67.19527376635757
+Omega_m       = 0.31171194726388524
+logA          = 3.033232875988148
+sigma8        = 0.8086358009443636
+S8            = 0.8242691804148345
+rd            = 147.3720390440949
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 1.0
+xi_equiv      = 1.0
+Omega_growth  = 0.31171194726388524
+chi_total     = 1821.9195615588417
+chi_BAO       = 39.010260992865526
+chi_SN        = 1759.9763133488595
+chi_fs8       = 14.9429255662068
+chi_S8        = 2.205835529391569
+chi_As        = 0.5914844871765158
+chi_rd        = 0.8222804612451647
+chi_ombh2     = 3.098447768288305
+chi_ommh2     = 1.2720134048081948
+AIC           = 1827.9195615588417
+BIC           = 1844.3044827354674
+
+Modelo: SOP
+H0            = 67.13600955627692
+Omega_m       = 0.31412768482580294
+logA          = 3.044279498292178
+sigma8        = 0.7616893232888812
+S8            = 0.7794178496413635
+rd            = 147.18202923915513
+fc            = 0.7740884146731773
+f_out         = 0.22591158532682265
+mu_eff        = 0.8100469748765068
+xi_equiv      = 0.7740884146731773
+Omega_growth  = 0.25445818081810245
+chi_total     = 1814.333368586101
+chi_BAO       = 41.34620427045897
+chi_SN        = 1759.240787487477
+chi_fs8       = 11.30404303087504
+chi_S8        = 0.011059594008017554
+chi_As        = 0.0003985678333187596
+chi_rd        = 0.0747644008485563
+chi_ombh2     = 1.855558754641768
+chi_ommh2     = 0.5005524799582045
+AIC           = 1822.333368586101
+BIC           = 1844.1799301549352
+
+Modelo: MU_LIBRE
+H0            = 67.13305653869485
+Omega_m       = 0.31427594424284055
+logA          = 3.0428026129587935
+sigma8        = 0.7619596550730376
+S8            = 0.7798784486783947
+rd            = 147.16928352242107
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 0.7762183171547637
+xi_equiv      = 0.733879676858467
+Omega_growth  = 0.24394674456240206
+chi_total     = 1814.3308128852696
+chi_BAO       = 41.48585896152903
+chi_SN        = 1759.196968447417
+chi_fs8       = 11.308322889840685
+chi_S8        = 0.01424129150385009
+chi_As        = 0.007314978196170071
+chi_rd        = 0.0533356275452384
+chi_ombh2     = 1.8019411390481295
+chi_ommh2     = 0.46282955018935884
+AIC           = 1822.3308128852696
+BIC           = 1844.1773744541038
+
+==============================
+RESUMEN TEST: 04_weak_lensing_prior_KiDS_like
+==============================
+Mejor BIC = MU_LIBRE
+Delta BIC SOP - LCDM = -0.12455258053228135
+Delta BIC MU  - LCDM = -0.12710828136368946
+Delta BIC MU  - SOP  = -0.002555700831408103
+SOP fc = 0.7740884146731773
+SOP f_out = 0.22591158532682265
+SOP mu_eff = 0.8100469748765068
+MU xi_equiv = 0.733879676858467
+MU físico SOP? = True
+
+
+################################################
+TEST: 04_weak_lensing_prior_DES_HSC_like
+################################################
+
+Modelo: LCDM
+H0            = 67.20245578396494
+Omega_m       = 0.31122258456476903
+logA          = 3.0285711211263995
+sigma8        = 0.8058999336164102
+S8            = 0.820835338091648
+rd            = 147.41888648582335
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 1.0
+xi_equiv      = 1.0
+Omega_growth  = 0.31122258456476903
+chi_total     = 1826.9284788881512
+chi_BAO       = 38.619709477367785
+chi_SN        = 1760.13026496768
+chi_fs8       = 14.428746723131097
+chi_S8        = 6.638210133521548
+chi_As        = 1.2145423637563146
+chi_rd        = 1.1298732315641031
+chi_ombh2     = 3.2706837151338926
+chi_ommh2     = 1.4964482759964601
+AIC           = 1832.9284788881512
+BIC           = 1849.313400064777
+
+Modelo: SOP
+H0            = 67.12976600604385
+Omega_m       = 0.31420719279911974
+logA          = 3.044279297014951
+sigma8        = 0.7524631821960137
+S8            = 0.7700744047883356
+rd            = 147.18303725912995
+fc            = 0.7403502915720953
+f_out         = 0.2596497084279047
+mu_eff        = 0.7816685227231411
+xi_equiv      = 0.7403502915720953
+Omega_growth  = 0.2456058722242731
+chi_total     = 1814.7132928881629
+chi_BAO       = 41.4828527189379
+chi_SN        = 1759.2172636426985
+chi_fs8       = 11.486264093024127
+chi_S8        = 0.21292090523595356
+chi_As        = 0.00039799399265516913
+chi_rd        = 0.0766131822646092
+chi_ombh2     = 1.743123966645014
+chi_ommh2     = 0.4938563853641432
+AIC           = 1822.7132928881629
+BIC           = 1844.559854456997
+
+Modelo: MU_LIBRE
+H0            = 67.14652392031594
+Omega_m       = 0.3142503122176576
+logA          = 3.0446011590818514
+sigma8        = 0.7529802113920495
+S8            = 0.7706564090165415
+rd            = 147.14968196730388
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 0.7406864880287912
+xi_equiv      = 0.6916206023927475
+Omega_growth  = 0.23276096011844793
+chi_total     = 1814.7133114935548
+chi_BAO       = 41.29005694726128
+chi_SN        = 1759.2045494616032
+chi_fs8       = 11.468138366120236
+chi_S8        = 0.23588866520991417
+chi_As        = 0.0018438379678179775
+chi_rd        = 0.027425531946489837
+chi_ombh2     = 2.0528692143107174
+chi_ommh2     = 0.43253946913523156
+AIC           = 1822.7133114935548
+BIC           = 1844.559873062389
+
+==============================
+RESUMEN TEST: 04_weak_lensing_prior_DES_HSC_like
+==============================
+Mejor BIC = SOP
+Delta BIC SOP - LCDM = -4.75354560777987
+Delta BIC MU  - LCDM = -4.753527002387955
+Delta BIC MU  - SOP  = 1.8605391915116343e-05
+SOP fc = 0.7403502915720953
+SOP f_out = 0.2596497084279047
+SOP mu_eff = 0.7816685227231411
+MU xi_equiv = 0.6916206023927475
+MU físico SOP? = True
+
+
+################################################
+TEST: 04_weak_lensing_prior_DES_Y3_like
+################################################
+
+Modelo: LCDM
+H0            = 67.19527376635757
+Omega_m       = 0.31171194726388524
+logA          = 3.033232875988148
+sigma8        = 0.8086358009443636
+S8            = 0.8242691804148345
+rd            = 147.3720390440949
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 1.0
+xi_equiv      = 1.0
+Omega_growth  = 0.31171194726388524
+chi_total     = 1821.9890324531998
+chi_BAO       = 39.010260992865526
+chi_SN        = 1759.9763133488595
+chi_fs8       = 14.9429255662068
+chi_S8        = 2.275306423749848
+chi_As        = 0.5914844871765158
+chi_rd        = 0.8222804612451647
+chi_ombh2     = 3.098447768288305
+chi_ommh2     = 1.2720134048081948
+AIC           = 1827.9890324531998
+BIC           = 1844.3739536298256
+
+Modelo: SOP
+H0            = 67.13600955627692
+Omega_m       = 0.31412768482580294
+logA          = 3.044279498292178
+sigma8        = 0.7616893232888812
+S8            = 0.7794178496413635
+rd            = 147.18202923915513
+fc            = 0.7740884146731773
+f_out         = 0.22591158532682265
+mu_eff        = 0.8100469748765068
+xi_equiv      = 0.7740884146731773
+Omega_growth  = 0.25445818081810245
+chi_total     = 1814.33371689851
+chi_BAO       = 41.34620427045897
+chi_SN        = 1759.240787487477
+chi_fs8       = 11.30404303087504
+chi_S8        = 0.011407906416961466
+chi_As        = 0.0003985678333187596
+chi_rd        = 0.0747644008485563
+chi_ombh2     = 1.855558754641768
+chi_ommh2     = 0.5005524799582045
+AIC           = 1822.33371689851
+BIC           = 1844.1802784673441
+
+Modelo: MU_LIBRE
+H0            = 67.1469584567048
+Omega_m       = 0.3141816767067295
+logA          = 3.0451740122228093
+sigma8        = 0.7605283206008655
+S8            = 0.77829670201966
+rd            = 147.15714988367327
+fc            = 1.0
+f_out         = 0.0
+mu_eff        = 0.7676586868321644
+xi_equiv      = 0.723684911651352
+Omega_growth  = 0.24118429336741556
+chi_total     = 1814.3351497963483
+chi_BAO       = 41.2378451875613
+chi_SN        = 1759.2248272672296
+chi_fs8       = 11.31086743857792
+chi_S8        = 0.005151211100693335
+chi_As        = 0.007032166833191021
+chi_rd        = 0.036290102265210594
+chi_ombh2     = 2.061238795155473
+chi_ommh2     = 0.4518976276249018
+AIC           = 1822.3351497963483
+BIC           = 1844.1817113651825
+
+==============================
+RESUMEN TEST: 04_weak_lensing_prior_DES_Y3_like
+==============================
+Mejor BIC = SOP
+Delta BIC SOP - LCDM = -0.19367516248144057
+Delta BIC MU  - LCDM = -0.19224226464302774
+Delta BIC MU  - SOP  = 0.0014328978384128277
+SOP fc = 0.7740884146731773
+SOP f_out = 0.22591158532682265
+SOP mu_eff = 0.8100469748765068
+MU xi_equiv = 0.723684911651352
+MU físico SOP? = True
+
+
+================================================
+TABLA FINAL SOP MASTER TEST
+================================================
+
+TEST: 01_growth_S8
+Mejor BIC             = MU_LIBRE
+Delta BIC SOP-LCDM    = -6.25716440282082
+Delta BIC MU-LCDM     = -6.25738627288667
+Delta BIC MU-SOP      = -0.00022187006585028257
+SOP fc                = 0.7420643869843139
+SOP f_out             = 0.2579356130156861
+SOP mu_eff            = 0.7826205698826935
+SOP S8                = 0.7802042973180384
+SOP Omega_growth      = 0.2488716911021771
+MU xi_equiv           = 0.6936225691831064
+MU físico como SOP?   = True
+
+TEST: 02_BAO_SN_full
+Mejor BIC             = MU_LIBRE
+Delta BIC SOP-LCDM    = -0.12455258053228135
+Delta BIC MU-LCDM     = -0.12710828136368946
+Delta BIC MU-SOP      = -0.002555700831408103
+SOP fc                = 0.7740884146731773
+SOP f_out             = 0.22591158532682265
+SOP mu_eff            = 0.8100469748765068
+SOP S8                = 0.7794178496413635
+SOP Omega_growth      = 0.25445818081810245
+MU xi_equiv           = 0.733879676858467
+MU físico como SOP?   = True
+
+TEST: 04_weak_lensing_prior_KiDS_like
+Mejor BIC             = MU_LIBRE
+Delta BIC SOP-LCDM    = -0.12455258053228135
+Delta BIC MU-LCDM     = -0.12710828136368946
+Delta BIC MU-SOP      = -0.002555700831408103
+SOP fc                = 0.7740884146731773
+SOP f_out             = 0.22591158532682265
+SOP mu_eff            = 0.8100469748765068
+SOP S8                = 0.7794178496413635
+SOP Omega_growth      = 0.25445818081810245
+MU xi_equiv           = 0.733879676858467
+MU físico como SOP?   = True
+
+TEST: 04_weak_lensing_prior_DES_HSC_like
+Mejor BIC             = SOP
+Delta BIC SOP-LCDM    = -4.75354560777987
+Delta BIC MU-LCDM     = -4.753527002387955
+Delta BIC MU-SOP      = 1.8605391915116343e-05
+SOP fc                = 0.7403502915720953
+SOP f_out             = 0.2596497084279047
+SOP mu_eff            = 0.7816685227231411
+SOP S8                = 0.7700744047883356
+SOP Omega_growth      = 0.2456058722242731
+MU xi_equiv           = 0.6916206023927475
+MU físico como SOP?   = True
+
+TEST: 04_weak_lensing_prior_DES_Y3_like
+Mejor BIC             = SOP
+Delta BIC SOP-LCDM    = -0.19367516248144057
+Delta BIC MU-LCDM     = -0.19224226464302774
+Delta BIC MU-SOP      = 0.0014328978384128277
+SOP fc                = 0.7740884146731773
+SOP f_out             = 0.22591158532682265
+SOP mu_eff            = 0.8100469748765068
+SOP S8                = 0.7794178496413635
+SOP Omega_growth      = 0.25445818081810245
+MU xi_equiv           = 0.723684911651352
+MU físico como SOP?   = True
+
+Lectura:
+- SOP fuerte: Delta BIC SOP-LCDM < -2 y fc estable.
+- SOP empate: |Delta BIC| < 2.
+- SOP tensionada: Delta BIC > 2.
+- Si MU_LIBRE empata y xi_equiv es físico, MU no destrona SOP: describe la misma supresión.
+
+================================================
+DCU v2.1 — PREDICCION FINAL
+fc=sqrt(3/5), eta=3/5, alpha(Omega_m)
+================================================
+
+
+################################################
+TEST: 01_growth_S8
+################################################
+
+GEOMETRIA DCU
+fc                         = 0.7745966692414834
+f_out                      = 0.2254033307585166
+eta=fc^2                   = 0.6000000000000001
+Omega_m                    = 0.31492957590620485
+Omega_b                    = 0.05
+Omega_d                    = 0.26492957590620486
+mu_eff                     = 0.8103829764039533
+alpha(Omega_m)             = 0.3265407114497391
+R=mu^alpha                 = 0.9336490693218956
+
+PREDICCION S8
+S8 LCDM                    = 0.8318592211386152
+S8 DCU predicho            = 0.776664587622905
+S8 DCU CLASS               = 0.7757762998029389
+ratio predicho             = 0.9336490693218956
+ratio CLASS                = 0.9325812350088369
+error relativo             = 0.0011450308809275607
+
+PREDICCION POR REDSHIFT
+z      fs8_LCDM   fs8_DCU_pred  fs8_DCU_CLASS  EG_LCDM  EG_DCU_pred  EG_ratio_pred
+0.1   0.450699   0.420795     0.420313     0.538033  0.576269     1.071066
+0.3   0.473965   0.442517     0.442011     0.460090  0.492787     1.071066
+0.5   0.474993   0.443477     0.442970     0.413938  0.443355     1.071066
+0.7   0.462478   0.431793     0.431299     0.385107  0.412475     1.071066
+1.0   0.431789   0.403140     0.402678     0.359345  0.384882     1.071066
+
+FIRMAS OBSERVACIONALES DCU
+Supresion S8 predicha       = 6.635093067810438 %
+Supresion fs8 predicha      = 6.635093067810438 %
+EG ratio predicho           = 1.0710662419727948
+Aumento EG predicho         = 7.106624197279476 %
+Error medio fs8 vs CLASS    = 0.001145030880927402
+Error max fs8 vs CLASS      = 0.0011450308809274705
+
+LECTURA
+- Si datos reales ven S8/fs8 menor pero H(z) intacto, DCU gana plausibilidad.
+- Si EG observado sube aproximadamente segun 1/R, DCU gana una firma independiente.
+- Si weak lensing/CMB obligan R≈1, DCU queda tensionada.
+
+
+################################################
+TEST: 02_BAO_SN_full
+################################################
+
+GEOMETRIA DCU
+fc                         = 0.7745966692414834
+f_out                      = 0.2254033307585166
+eta=fc^2                   = 0.6000000000000001
+Omega_m                    = 0.31171194726388524
+Omega_b                    = 0.05
+Omega_d                    = 0.26171194726388525
+mu_eff                     = 0.8107523785007915
+alpha(Omega_m)             = 0.33097438589657935
+R=mu^alpha                 = 0.9329198598175968
+
+PREDICCION S8
+S8 LCDM                    = 0.8242691804148345
+S8 DCU predicho            = 0.7689770882445729
+S8 DCU CLASS               = 0.7681782220964245
+ratio predicho             = 0.9329198598175968
+ratio CLASS                = 0.9319506786724928
+error relativo             = 0.0010399489664888145
+
+PREDICCION POR REDSHIFT
+z      fs8_LCDM   fs8_DCU_pred  fs8_DCU_CLASS  EG_LCDM  EG_DCU_pred  EG_ratio_pred
+0.1   0.446680   0.416717     0.416284     0.535321  0.573813     1.071903
+0.3   0.470471   0.438912     0.438456     0.457284  0.490164     1.071903
+0.5   0.472095   0.440427     0.439969     0.411045  0.440601     1.071903
+0.7   0.460116   0.429251     0.428806     0.382143  0.409620     1.071903
+1.0   0.430043   0.401196     0.400779     0.356302  0.381922     1.071903
+
+FIRMAS OBSERVACIONALES DCU
+Supresion S8 predicha       = 6.708014018240316 %
+Supresion fs8 predicha      = 6.708014018240316 %
+EG ratio predicho           = 1.0719034325151129
+Aumento EG predicho         = 7.190343251511289 %
+Error medio fs8 vs CLASS    = 0.0010399489664889054
+Error max fs8 vs CLASS      = 0.0010399489664890086
+
+LECTURA
+- Si datos reales ven S8/fs8 menor pero H(z) intacto, DCU gana plausibilidad.
+- Si EG observado sube aproximadamente segun 1/R, DCU gana una firma independiente.
+- Si weak lensing/CMB obligan R≈1, DCU queda tensionada.
+
+
+################################################
+TEST: 04_weak_lensing_prior_KiDS_like
+################################################
+
+GEOMETRIA DCU
+fc                         = 0.7745966692414834
+f_out                      = 0.2254033307585166
+eta=fc^2                   = 0.6000000000000001
+Omega_m                    = 0.31171194726388524
+Omega_b                    = 0.05
+Omega_d                    = 0.26171194726388525
+mu_eff                     = 0.8107523785007915
+alpha(Omega_m)             = 0.33097438589657935
+R=mu^alpha                 = 0.9329198598175968
+
+PREDICCION S8
+S8 LCDM                    = 0.8242691804148345
+S8 DCU predicho            = 0.7689770882445729
+S8 DCU CLASS               = 0.7681782220964245
+ratio predicho             = 0.9329198598175968
+ratio CLASS                = 0.9319506786724928
+error relativo             = 0.0010399489664888145
+
+PREDICCION POR REDSHIFT
+z      fs8_LCDM   fs8_DCU_pred  fs8_DCU_CLASS  EG_LCDM  EG_DCU_pred  EG_ratio_pred
+0.1   0.446680   0.416717     0.416284     0.535321  0.573813     1.071903
+0.3   0.470471   0.438912     0.438456     0.457284  0.490164     1.071903
+0.5   0.472095   0.440427     0.439969     0.411045  0.440601     1.071903
+0.7   0.460116   0.429251     0.428806     0.382143  0.409620     1.071903
+1.0   0.430043   0.401196     0.400779     0.356302  0.381922     1.071903
+
+FIRMAS OBSERVACIONALES DCU
+Supresion S8 predicha       = 6.708014018240316 %
+Supresion fs8 predicha      = 6.708014018240316 %
+EG ratio predicho           = 1.0719034325151129
+Aumento EG predicho         = 7.190343251511289 %
+Error medio fs8 vs CLASS    = 0.0010399489664889054
+Error max fs8 vs CLASS      = 0.0010399489664890086
+
+LECTURA
+- Si datos reales ven S8/fs8 menor pero H(z) intacto, DCU gana plausibilidad.
+- Si EG observado sube aproximadamente segun 1/R, DCU gana una firma independiente.
+- Si weak lensing/CMB obligan R≈1, DCU queda tensionada.
+
+
+################################################
+TEST: 04_weak_lensing_prior_DES_HSC_like
+################################################
+
+GEOMETRIA DCU
+fc                         = 0.7745966692414834
+f_out                      = 0.2254033307585166
+eta=fc^2                   = 0.6000000000000001
+Omega_m                    = 0.31122258456476903
+Omega_b                    = 0.05
+Omega_d                    = 0.26122258456476904
+mu_eff                     = 0.8108092293090204
+alpha(Omega_m)             = 0.33164869456780754
+R=mu^alpha                 = 0.9328095856643303
+
+PREDICCION S8
+S8 LCDM                    = 0.820835338091648
+S8 DCU predicho            = 0.7656830716239106
+S8 DCU CLASS               = 0.7648922661289907
+ratio predicho             = 0.9328095856643303
+ratio CLASS                = 0.9318461701554922
+error relativo             = 0.0010338782727167385
+
+PREDICCION POR REDSHIFT
+z      fs8_LCDM   fs8_DCU_pred  fs8_DCU_CLASS  EG_LCDM  EG_DCU_pred  EG_ratio_pred
+0.1   0.444833   0.414945     0.414516     0.534908  0.573438     1.072030
+0.3   0.468637   0.437150     0.436698     0.456857  0.489764     1.072030
+0.5   0.470347   0.438744     0.438291     0.410605  0.440181     1.072030
+0.7   0.458482   0.427677     0.427235     0.381692  0.409185     1.072030
+1.0   0.428587   0.399790     0.399377     0.355840  0.381471     1.072030
+
+FIRMAS OBSERVACIONALES DCU
+Supresion S8 predicha       = 6.719041433566975 %
+Supresion fs8 predicha      = 6.719041433566975 %
+EG ratio predicho           = 1.0720301499558649
+Aumento EG predicho         = 7.2030149955864875 %
+Error medio fs8 vs CLASS    = 0.0010338782727168194
+Error max fs8 vs CLASS      = 0.001033878272716931
+
+LECTURA
+- Si datos reales ven S8/fs8 menor pero H(z) intacto, DCU gana plausibilidad.
+- Si EG observado sube aproximadamente segun 1/R, DCU gana una firma independiente.
+- Si weak lensing/CMB obligan R≈1, DCU queda tensionada.
+
+
+################################################
+TEST: 04_weak_lensing_prior_DES_Y3_like
+################################################
+
+GEOMETRIA DCU
+fc                         = 0.7745966692414834
+f_out                      = 0.2254033307585166
+eta=fc^2                   = 0.6000000000000001
+Omega_m                    = 0.31171194726388524
+Omega_b                    = 0.05
+Omega_d                    = 0.26171194726388525
+mu_eff                     = 0.8107523785007915
+alpha(Omega_m)             = 0.33097438589657935
+R=mu^alpha                 = 0.9329198598175968
+
+PREDICCION S8
+S8 LCDM                    = 0.8242691804148345
+S8 DCU predicho            = 0.7689770882445729
+S8 DCU CLASS               = 0.7681782220964245
+ratio predicho             = 0.9329198598175968
+ratio CLASS                = 0.9319506786724928
+error relativo             = 0.0010399489664888145
+
+PREDICCION POR REDSHIFT
+z      fs8_LCDM   fs8_DCU_pred  fs8_DCU_CLASS  EG_LCDM  EG_DCU_pred  EG_ratio_pred
+0.1   0.446680   0.416717     0.416284     0.535321  0.573813     1.071903
+0.3   0.470471   0.438912     0.438456     0.457284  0.490164     1.071903
+0.5   0.472095   0.440427     0.439969     0.411045  0.440601     1.071903
+0.7   0.460116   0.429251     0.428806     0.382143  0.409620     1.071903
+1.0   0.430043   0.401196     0.400779     0.356302  0.381922     1.071903
+
+FIRMAS OBSERVACIONALES DCU
+Supresion S8 predicha       = 6.708014018240316 %
+Supresion fs8 predicha      = 6.708014018240316 %
+EG ratio predicho           = 1.0719034325151129
+Aumento EG predicho         = 7.190343251511289 %
+Error medio fs8 vs CLASS    = 0.0010399489664889054
+Error max fs8 vs CLASS      = 0.0010399489664890086
+
+LECTURA
+- Si datos reales ven S8/fs8 menor pero H(z) intacto, DCU gana plausibilidad.
+- Si EG observado sube aproximadamente segun 1/R, DCU gana una firma independiente.
+- Si weak lensing/CMB obligan R≈1, DCU queda tensionada.
+
+
+================================================
+TABLA FINAL DCU v2.1
+================================================
+
+TEST: 01_growth_S8
+Omega_m       = 0.31492957590620485
+mu_eff        = 0.8103829764039533
+alpha         = 0.3265407114497391
+R             = 0.9336490693218956
+S8_LCDM       = 0.8318592211386152
+S8_DCU_pred   = 0.776664587622905
+S8_DCU_CLASS  = 0.7757762998029389
+EG_ratio_pred = 1.0710662419727948
+fs8_err       = 0.001145030880927402
+
+TEST: 02_BAO_SN_full
+Omega_m       = 0.31171194726388524
+mu_eff        = 0.8107523785007915
+alpha         = 0.33097438589657935
+R             = 0.9329198598175968
+S8_LCDM       = 0.8242691804148345
+S8_DCU_pred   = 0.7689770882445729
+S8_DCU_CLASS  = 0.7681782220964245
+EG_ratio_pred = 1.0719034325151129
+fs8_err       = 0.0010399489664889054
+
+TEST: 04_weak_lensing_prior_KiDS_like
+Omega_m       = 0.31171194726388524
+mu_eff        = 0.8107523785007915
+alpha         = 0.33097438589657935
+R             = 0.9329198598175968
+S8_LCDM       = 0.8242691804148345
+S8_DCU_pred   = 0.7689770882445729
+S8_DCU_CLASS  = 0.7681782220964245
+EG_ratio_pred = 1.0719034325151129
+fs8_err       = 0.0010399489664889054
+
+TEST: 04_weak_lensing_prior_DES_HSC_like
+Omega_m       = 0.31122258456476903
+mu_eff        = 0.8108092293090204
+alpha         = 0.33164869456780754
+R             = 0.9328095856643303
+S8_LCDM       = 0.820835338091648
+S8_DCU_pred   = 0.7656830716239106
+S8_DCU_CLASS  = 0.7648922661289907
+EG_ratio_pred = 1.0720301499558649
+fs8_err       = 0.0010338782727168194
+
+TEST: 04_weak_lensing_prior_DES_Y3_like
+Omega_m       = 0.31171194726388524
+mu_eff        = 0.8107523785007915
+alpha         = 0.33097438589657935
+R             = 0.9329198598175968
+S8_LCDM       = 0.8242691804148345
+S8_DCU_pred   = 0.7689770882445729
+S8_DCU_CLASS  = 0.7681782220964245
+EG_ratio_pred = 1.0719034325151129
+fs8_err       = 0.0010399489664889054
+
+================================================
+PREDICCION CENTRAL
+================================================
+DCU predice:
+1) H(z) casi igual a LCDM.
+2) S8 y fσ8 suprimidos por R=mu_eff^alpha(Omega_m).
+3) EG aumentado aproximadamente por 1/R.
+4) El acople geométrico fijo es fc=sqrt(3/5).
+5) La eficiencia energética geométrica es eta=3/5.
+
+
+Generando gráficos PRUEBA 5...
+
+Resumen PRUEBA 5
+N = 5
+R_pred mean = 0.9278563534840825
+R_class mean = 0.9278563534840825
+R error mean % = 0.0
+R error max % = 0.0
+S8 LCDM mean = 0.8251004200949532
+S8 GEO pred mean = 0.76556967848843
+EG ratio mean = 1.0777883650776474
+suppression mean % = 7.2143646515917625
+
+Gráficos PRUEBA 5 generados.
