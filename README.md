@@ -1,3 +1,14 @@
+---
+
+## 🛠️ Technical Validation Kit (CLASS Patch)
+The official implementation of the GEO framework for **CLASS v3.x** is now available. This kit includes the necessary source patches and diagnostic scripts to reproduce the $H_0 = 73.04$ result.
+
+👉 **Access the Kit here:** [https://github.com/LeoTorreblanca/GEO_Launch_Kit](https://github.com/LeoTorreblanca/GEO_Launch_Kit)
+
+*Note: Usage is restricted to technical verification and auditing purposes under the author's intellectual property terms.*
+
+---
+
 # GEO-hidden-geometry-framework
 Geometría Oculta (GEO): a hidden geometric framework detectable through cosmological observational effects.
 
