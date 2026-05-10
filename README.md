@@ -1,5 +1,3 @@
----
-
 ## 🛠️ Technical Validation Kit (CLASS Patch)
 The official implementation of the GEO framework for **CLASS v3.x** is now available. This kit includes the necessary source patches and diagnostic scripts to reproduce the $H_0 = 73.04$ result.
 
