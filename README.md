@@ -7,6 +7,12 @@ The official implementation of the GEO framework for **CLASS v3.x** is now avail
 
 ---
 
+### 🌐 Official Channels
+[![X Follow](https://img.shields.io/twitter/follow/GEO_Hidden?style=for-the-badge&logo=x&logoColor=white&color=000000)](https://x.com/GEO_Hidden)
+[![OSF Registration](https://img.shields.io/badge/OSF-Registration-blue?style=for-the-badge)](https://osf.io/yhdmz)
+
+---
+
 # GEO-hidden-geometry-framework
 Geometría Oculta (GEO): a hidden geometric framework detectable through cosmological observational effects.
 
