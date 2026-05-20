@@ -13,6 +13,8 @@ The official implementation of the GEO framework for **CLASS v3.x** is now avail
 *Note: Usage is restricted to technical verification and auditing purposes under the author's intellectual property terms.*
 
 ---
+[![JOSS Status](https://img.shields.io/badge/JOSS-submitted-yellow.svg)](https://joss.theoj.org/)
+*Note: This framework is currently under active submission to the Journal of Open Source Software (JOSS) and cross-referenced under administrative review at arXiv.*
 
 ### 🌐 Official Channels
 [![X Follow](https://img.shields.io/twitter/follow/GEO_Hidden?style=for-the-badge&logo=x&logoColor=white&color=000000)](https://x.com/GEO_Hidden)
@@ -150,8 +152,7 @@ Final observational consistency analysis involving:
 
 ```text
 
-[![JOSS Status](https://img.shields.io/badge/JOSS-submitted-yellow.svg)](https://joss.theoj.org/)
-*Note: This framework is currently under active submission to the Journal of Open Source Software (JOSS) and cross-referenced under administrative review at arXiv.*
+
 scripts/    -> reproducible GEO scripts
 figures/    -> generated plots and visual outputs
 results/    -> numerical outputs and console logs
