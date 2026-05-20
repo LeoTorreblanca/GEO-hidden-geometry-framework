@@ -50,6 +50,13 @@ $$\alpha = \frac{\Phi \times (1 - \eta)}{\sqrt{2}} \approx 0.534463$$
 * [PDF 5: Final Cosmological Closure Report](./docs/mathematics/05-FINAL_RESOLUTION_HUBBLE_EN.pdf)
 
 ---
+### 🌐 Context & Observational Discrepancy References
+This geometric resolution addresses the current core observational conflicts debated by the international physics community:
+* **The Hubble Wars Framework:** [Museum of Science Analysis](./https://www.mos.org/article/what-heck-hubble-tension-aka-hubble-wars) — Reviewing the baseline tension between Planck ($67.4$) and SHOES ($73.04 \text{ km/s/Mpc}$) measurements.
+* **Active Academic Review (2026):** [arXiv:2505.24743v1](./https://arxiv.org/html/2505.24743v1) — Documenting active space telescope data-fitting and systematic constraints.
+* **The Call for New Physics:** [CERN Courier Report](./https://cerncourier.com/a/the-hubble-tension/) — Outlining the theoretical necessity for zero-relative-error structural and harmonic operators.
+
+---
 ---
 
 # GEO-hidden-geometry-framework
