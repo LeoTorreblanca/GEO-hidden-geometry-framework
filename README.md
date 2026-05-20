@@ -149,6 +149,9 @@ Final observational consistency analysis involving:
 # Repository Structure
 
 ```text
+
+[![JOSS Status](https://img.shields.io/badge/JOSS-submitted-yellow.svg)](https://joss.theoj.org/)
+*Note: This framework is currently under active submission to the Journal of Open Source Software (JOSS) and cross-referenced under administrative review at arXiv.*
 scripts/    -> reproducible GEO scripts
 figures/    -> generated plots and visual outputs
 results/    -> numerical outputs and console logs
