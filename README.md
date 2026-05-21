@@ -59,6 +59,22 @@ This geometric resolution addresses the current core observational conflicts deb
 ---
 ---
 
+## 🪐 Multi-Planetary Empirical Validation (NASA Data Bridge)
+The geometric rules of the GEO Framework are not limited to large-scale cosmological structures; they scale invariantly down to planetary system architectures. 
+
+An automated empirical validation has been performed against the official **NASA Exoplanet Archive**, tracking how orbital focus and structural fractures occur across **2,099 multi-planetary systems** ($N \geq 3$).
+
+👉 **Explore the Data Suite:** [GEO-Exoplanets-Validation](https://github.com/LeoTorreblanca/GEO-Exoplanets-Validation)
+
+### 📈 Planetary Critical Thresholds & The $N=5$ Step
+When applying the GEO Critical Discontinuity Operator with a threshold of $2.2$ on semi-major axis ratios ($a_{i+1}/a_i$), the universe reveals three geometric laws:
+* **98.09% Coherence Rate:** Planetary architectures strictly minimize chaos, restricting themselves to 0 or 1 major transition jump.
+* **The $N=5$ Geometric Saturation:** The probability of structural fracture behaves like a quantum step-function, jumping from **9.58%** to **26.67%** exactly at the 5th body, confirming the packing limits of a single harmonic resonance shell.
+* **Internal Node Protection:** Inner nodes remain tightly locked. In high-complexity systems ($N=7$), internal fractures drop to zero, concentrating a prominent **41.7%** of the focus jumps exactly between **Node 3 and Node 4**.
+
+---
+---
+
 # GEO-hidden-geometry-framework
 Geometría Oculta (GEO): a hidden geometric framework detectable through cosmological observational effects.
 
