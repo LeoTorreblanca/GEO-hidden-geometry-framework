@@ -7,6 +7,14 @@ layout: default
 
 <meta name="google-site-verification" content="Kila_Tq12oqpqTSHe5GuDIefLwcCL2V8Zenj-O5PUi4" />
 
+---
+
+## Update: ESP Version
+
+For a cleaner, organized, and Spanish-language reconstruction of this experimental framework, please visit our dedicated technical repository:
+[**GEO-Geometria-Oculta-ESP**] https://github.com/LeoTorreblanca/GEO-Geometria-Oculta-ESP
+
+---
 ## 🛠️ Technical Validation Kit (CLASS Patch)
 The official implementation of the GEO framework for **CLASS v3.x** is now available. This kit includes the necessary source patches and diagnostic scripts to reproduce the $H_0 = 73.04$ result.
 
