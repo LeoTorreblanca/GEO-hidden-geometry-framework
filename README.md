@@ -24,8 +24,6 @@ The GEO Launch Kit is released under the MIT License and is provided as a public
 
 ---
 
-[![JOSS Status](https://img.shields.io/badge/JOSS-submitted-yellow.svg)](https://joss.theoj.org/)
-*Note: This framework is currently under active submission to the Journal of Open Source Software (JOSS) and cross-referenced under administrative review at arXiv.*
 
 ### 🌐 Official Channels
 [![X Follow](https://img.shields.io/twitter/follow/GEO_Hidden?style=for-the-badge&logo=x&logoColor=white&color=000000)](https://x.com/GEO_Hidden)
