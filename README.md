@@ -8,6 +8,14 @@ layout: default
 <meta name="google-site-verification" content="Kila_Tq12oqpqTSHe5GuDIefLwcCL2V8Zenj-O5PUi4" />
 
 ---
+# 🌌 GEO — Hidden Geometry Framework
+
+GEO (Hidden Geometry Framework) is an exploratory mathematical and cosmological framework investigating whether stable geometric transfer relations can reproduce selected observational structures through an internal operator architecture.
+
+The framework explores geometric operators, transfer structures, hidden efficiency relations, cosmological applications, planetary architectures, and reproducible numerical experiments.
+
+This repository contains the public GEO framework, mathematical notes, validation studies, experimental results, and GEO-Lens applications.
+
 
 ## Update: ESP Version
 
