@@ -30,6 +30,11 @@ The official implementation of the GEO framework for **CLASS v3.x** is now avail
 
 The GEO Launch Kit is released under the MIT License and is provided as a public validation environment for independent inspection, reproduction, testing, and scientific discussion of GEO-Lens calculations and associated Hubble examples.
 
+### CLASS-GEO-Lens
+
+Public GEO-Lens implementation layer for CLASS users:
+
+https://github.com/LeoTorreblanca/CLASS-GEO-Lens
 ---
 
 
