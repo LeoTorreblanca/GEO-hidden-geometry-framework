@@ -33,11 +33,11 @@ The GEO Launch Kit is released under the MIT License and is provided as a public
 
 ---
 
-## 🌌 Hubble Tension Geometric Resolution (Hubble Prize Application)
+## 🌌 GEO-Lens Application to the Hubble Tension
 
-This framework provides the formal mathematical and programmatic resolution of the Hubble Tension utilizing **GEO Internal Operators** ($\delta_R$, $B/A$, $B$, and $1-f_c$). 
+This section presents the GEO-Lens application to the Hubble tension and summarizes the operator chain used to reconstruct the numerical scale of the discrepancy between early-universe and local measurements of the Hubble constant.
 
-By applying the intrinsic geometry of the **GEO Lens model**, the cosmological discrepancy between Planck (background) and SH0ES (local) measurements is resolved as a projective focus effect (Perspective Tension) with **12-digit precision and zero relative error**.
+The associated mathematical derivations, operator definitions, validation materials, and closure documents are provided below for independent inspection, reproduction, and evaluation.
 
 ### 📐 Core Mathematical Derivation (Strong Prediction)
 The intensity factor $\alpha$ is derived autonomously from the internal harmonic geometry without external data calibration:
