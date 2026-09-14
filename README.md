@@ -179,19 +179,13 @@ motivated the canonical GEO node.
 The canonical structural relation is
 
 $$
-\boxed{
-\eta=\frac35
-}
+\boxed{\eta=\frac35}
 $$
 
 with
 
 $$
-\boxed{
-f_c=\sqrt{\eta}
-=
-\sqrt{\frac35}
-}
+\boxed{f_c=\sqrt{\eta}=\sqrt{\frac35}}
 $$
 
 and therefore
@@ -201,29 +195,19 @@ $$
 $$
 
 $$
-f_c
-=
-0.774596669241483\ldots
+f_c=0.774596669241483\ldots
 $$
 
 The complementary fraction is
 
 $$
-B=1-\eta
-=
-\frac25
-=
-0.4.
+B=1-\eta=\frac25=0.4.
 $$
 
 Thus the canonical lossless GEO partition is
 
 $$
-\boxed{
-A=\frac35,
-\qquad
-B=\frac25.
-}
+\boxed{A=\frac35,\qquadB=\frac25.}
 $$
 
 This structural node became part of the mature mathematical
@@ -236,9 +220,7 @@ architecture after the exploratory numerical stage.
 The general normalized GEO state is written as
 
 $$
-\boxed{
-A+B+L=T
-}
+\boxed{A+B+L=T}
 $$
 
 with
@@ -262,9 +244,7 @@ $$
 so that
 
 $$
-\boxed{
-A+B=1.
-}
+\boxed{A+B=1.}
 $$
 
 For the canonical GEO state,
@@ -295,25 +275,19 @@ They are not the same mathematical object.
 The general effective-state law is
 
 $$
-\boxed{
-R^3=\mu_{\mathrm{eff}}
-}
+\boxed{R^3=\mu_{\mathrm{eff}}}
 $$
 
 or equivalently
 
 $$
-\boxed{
-R=\mu_{\mathrm{eff}}^{1/3}.
-}
+\boxed{R=\mu_{\mathrm{eff}}^{1/3}.}
 $$
 
 Therefore, in general,
 
 $$
-\boxed{
-\mu_{\mathrm{eff}}\neq\eta.
-}
+\boxed{\mu_{\mathrm{eff}}\neq\eta.}
 $$
 
 A particular application may assign equal numerical values, but such an
@@ -367,14 +341,7 @@ The canonical two-dimensional GEO transformation is represented by the
 orthogonal operator
 
 $$
-\boxed{
-Q=
-\frac{1}{\sqrt2}
-\begin{pmatrix}
-1 & 1\\
--1 & 1
-\end{pmatrix}.
-}
+\boxed{Q=\frac{1}{\sqrt2}\begin{pmatrix}1 & 1\\-1 & 1\end{pmatrix}.}
 $$
 
 It satisfies
@@ -392,19 +359,13 @@ $$
 The associated canonical angle is
 
 $$
-\boxed{
-\theta=\frac{\pi}{4}.
-}
+\boxed{\theta=\frac{\pi}{4}.}
 $$
 
 For a conservative vector
 
 $$
-\mathbf v=
-\begin{pmatrix}
-A\\
-B
-\end{pmatrix},
+\mathbf v=\begin{pmatrix}A\\B\end{pmatrix},
 $$
 
 the projected state is
@@ -416,9 +377,7 @@ $$
 The first projected coordinate is therefore
 
 $$
-A'
-=
-\frac{A+B}{\sqrt2}.
+A'=\frac{A+B}{\sqrt2}.
 $$
 
 For the lossless normalized state,
@@ -430,9 +389,7 @@ $$
 which gives
 
 $$
-\boxed{
-A'=\frac1{\sqrt2}.
-}
+\boxed{A'=\frac1{\sqrt2}.}
 $$
 
 The complete orthogonal transformation preserves norm and admits inverse
@@ -502,17 +459,13 @@ $$
 Associated quantities include
 
 $$
-D_{\mathrm{bal}}
-=
-\cos(2\theta),
+D_{\mathrm{bal}}=\cos(2\theta),
 $$
 
 and
 
 $$
-D_{\mathrm{coup}}
-=
-\frac14\sin^2(2\theta).
+D_{\mathrm{coup}}=\frac14\sin^2(2\theta).
 $$
 
 At the canonical state,
@@ -552,27 +505,19 @@ measurable physical quantities.
 A spectral quantity is defined by
 
 $$
-\boxed{
-\Phi=\rho(M_5)
-}
+\boxed{\Phi=\rho(M_5)}
 $$
 
 where
 
 $$
-\rho(M_5)
-=
-\max_i |\lambda_i|.
+\rho(M_5)=\max_i |\lambda_i|.
 $$
 
 A related coefficient is
 
 $$
-\boxed{
-\alpha
-=
-\frac{\Phi B}{\sqrt2}.
-}
+\boxed{\alpha=\frac{\Phi B}{\sqrt2}.}
 $$
 
 The detailed realization of $M_5$ belongs to the operator layer and must
@@ -590,9 +535,7 @@ This distinction is deliberate.
 The historical sequence is not
 
 $$
-\text{axioms}
-\rightarrow
-\text{prediction}.
+\text{axioms}\rightarrow\text{prediction}.
 $$
 
 It is better represented as
@@ -931,82 +874,55 @@ framework.
 The principal current GEO relations include
 
 $$
-\boxed{
-A+B+L=1
-}
+\boxed{A+B+L=1}
 $$
 
 and, for the lossless state,
 
 $$
-\boxed{
-A+B=1.
-}
+\boxed{A+B=1.}
 $$
 
 The canonical structural node is
 
 $$
-\boxed{
-\eta=\frac35.
-}
+\boxed{\eta=\frac35.}
 $$
 
 The associated coupling amplitude is
 
 $$
-\boxed{
-f_c=\sqrt{\eta}
-=
-\sqrt{\frac35}.
-}
+\boxed{f_c=\sqrt{\eta}=\sqrt{\frac35}.}
 $$
 
 The complementary fraction is
 
 $$
-\boxed{
-B=1-\eta=\frac25.
-}
+\boxed{B=1-\eta=\frac25.}
 $$
 
 The general effective-state radial law is
 
 $$
-\boxed{
-R^3=\mu_{\mathrm{eff}},
-\qquad
-R=\mu_{\mathrm{eff}}^{1/3}.
-}
+\boxed{R^3=\mu_{\mathrm{eff}},\qquadR=\mu_{\mathrm{eff}}^{1/3}.}
 $$
 
 The canonical projective operator is
 
 $$
-\boxed{
-Q=
-\frac1{\sqrt2}
-\begin{pmatrix}
-1&1\\
--1&1
-\end{pmatrix}.
-}
+\boxed{Q=\frac1{\sqrt2}\begin{pmatrix}1&1\\-1&1\end{pmatrix}.}
 $$
 
 The spectral definition is
 
 $$
-\boxed{
-\Phi=\rho(M_5).
-}
+\boxed{\Phi=\rho(M_5).}
 $$
 
 A corresponding coefficient is
 
 $$
-\boxed{
-\alpha=\frac{\Phi B}{\sqrt2}.
-}
+\boxed{\alpha=\frac{\Phi B}{\sqrt2}.}
 $$
 
 These equations belong to different layers of the architecture and
@@ -1083,18 +999,14 @@ structures.
 That process led to the canonical structural node
 
 $$
-\boxed{
-\eta=\frac35.
-}
+\boxed{\eta=\frac35.}
 $$
 
 The mature architecture now distinguishes that structural parameter from
 the general effective state,
 
 $$
-\boxed{
-R^3=\mu_{\mathrm{eff}}.
-}
+\boxed{R^3=\mu_{\mathrm{eff}}.}
 $$
 
 The framework develops conservative, projective, harmonic, transport,
