@@ -859,9 +859,13 @@ https://github.com/LeoTorreblanca/GEO-External-Operator
 
 Formal mathematical development of the mature framework.
 
+https://github.com/LeoTorreblanca/GEO-FOUNDATIONS
+
 ### GEO Cosmology / MCMC
 
 Application-specific cosmological inference and reproducibility work.
+
+https://github.com/LeoTorreblanca/GEO-Cosmology-MCMC
 
 ### GEO-Hubble Geometric Projection
 
