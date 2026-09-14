@@ -853,24 +853,39 @@ canonical formulation.
 
 Standalone executable implementation of the GEO mathematical operator:
 
+**Repository:**  
 https://github.com/LeoTorreblanca/GEO-External-Operator
+
+**Archived release:**  
+https://doi.org/10.5281/zenodo.22546033
 
 ### GEO-FOUNDATIONS
 
 Formal mathematical development of the mature framework.
 
+**Repository:**  
 https://github.com/LeoTorreblanca/GEO-FOUNDATIONS
+
+**Archived release:**  
+https://doi.org/10.5281/zenodo.21362342
 
 ### GEO Cosmology / MCMC
 
 Application-specific cosmological inference and reproducibility work.
 
+**Repository:**  
 https://github.com/LeoTorreblanca/GEO-Cosmology-MCMC
+
+**Archived release:**  
+https://doi.org/10.5281/zenodo.22103137
 
 ### GEO-Hubble Geometric Projection
 
 Dedicated evaluation of a projective Hubble hypothesis derived from the
 GEO architecture.
+
+**Repository:**  
+https://github.com/LeoTorreblanca/GEO-Hubble-Geometric-Projection
 
 Application repositories are intentionally separated from the core
 framework.
