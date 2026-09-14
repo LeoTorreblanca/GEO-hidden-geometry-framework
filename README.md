@@ -905,28 +905,32 @@ $$
 \boxed{B=1-\eta=\frac25.}
 $$
 
-The general effective-state radial law is
+TThe general effective-state radial law is
 
 $$
-\boxed{R^3=\mu_{\mathrm{eff}},\qquadR=\mu_{\mathrm{eff}}^{1/3}.}
+\boxed{R^3=\mu_{\mathrm{eff}}}
+$$
+
+$$
+\boxed{R=\mu_{\mathrm{eff}}^{1/3}}
 $$
 
 The canonical projective operator is
 
 $$
-\boxed{Q=\frac1{\sqrt2}\begin{pmatrix}1&1\\-1&1\end{pmatrix}.}
+\boxed{Q=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 \cr -1 & 1\end{array}\right]}
 $$
 
 The spectral definition is
 
 $$
-\boxed{\Phi=\rho(M_5).}
+\boxed{\Phi=\rho(M_5)}
 $$
 
 A corresponding coefficient is
 
 $$
-\boxed{\alpha=\frac{\Phi B}{\sqrt2}.}
+\boxed{\alpha=\frac{\Phi B}{\sqrt{2}}}
 $$
 
 These equations belong to different layers of the architecture and
