@@ -1,54 +1,55 @@
 # GEO — Hidden Geometry Framework
 
-## Historical framework, mathematical architecture, and computational provenance
+## Mathematical origin, geometric architecture, and computational development
 
 **Author:** Leonel Hernán Torreblanca  
 **Project:** GEO — Hidden Geometry  
 **Repository role:** Historical and architectural root of the GEO research program  
-**Status:** Research / open reproducibility framework
+**Status:** Open research and reproducibility framework
 
 ---
 
-# 1. Overview
+## 1. Overview
 
-GEO (Hidden Geometry) is an exploratory mathematical and computational
-framework developed to investigate whether apparently scalar physical
-descriptions can admit a deeper complementary, conservative, and
-projective organization.
+GEO — Hidden Geometry is an exploratory mathematical and computational
+research program developed from a question about complementary
+representations, conservation, projection, and geometric structure.
 
-The project did not originate from the Hubble tension.
+The framework did not begin from a cosmological target.
 
-Its earliest motivation was a mathematical observation concerning the
-formal similarity of two inverse-square interactions,
+Its origin was a formal mathematical observation: Newtonian gravitation
+and Coulomb interaction possess closely related inverse-square forms,
 
-\[
-F_C = k\frac{q_1q_2}{r^2},
-\]
+$$
+F_G = G\frac{m_1m_2}{r^2},
+$$
 
 and
 
-\[
-F_G = G\frac{m_1m_2}{r^2},
-\]
+$$
+F_C = k\frac{q_1q_2}{r^2},
+$$
 
-together with their different algebraic and physical behavior.
+while their source variables and physical interpretations are different.
 
-This comparison was never intended to assert an equivalence between
-electromagnetism and gravity.
+This similarity was used only as mathematical inspiration.
 
-It instead motivated a narrower mathematical question:
+GEO does **not** assert that gravity and electromagnetism are the same
+interaction, nor that one is derived from the other.
 
-> Can a quantity normally represented by a single scalar component
-> conceal a complementary internal structure that becomes visible under
-> a different mathematical representation?
+The motivating question was instead:
 
-That question initiated a sequence of exploratory models that eventually
-led to the present GEO architecture.
+> Can a scalar description conceal a complementary internal structure
+> that becomes visible under a different mathematical representation?
 
-The historical path can be summarized as
+That question initiated a sequence of exploratory models, numerical
+experiments, and geometric reformulations that eventually led to the
+current GEO architecture.
 
-\[
-\text{inverse-square-law curiosity}
+The historical development can be summarized as
+
+$$
+\text{formal inverse-square comparison}
 \rightarrow
 \text{dual representation}
 \rightarrow
@@ -56,1139 +57,1099 @@ The historical path can be summarized as
 \rightarrow
 \text{numerical recurrence}
 \rightarrow
-\text{geometric node}
+\text{geometric interpretation}
 \rightarrow
-\text{GEO architecture}.
-\]
-
-This sequence records the provenance of the framework.
-
-It is **not** a derivation of gravity from electromagnetism and should
-not be interpreted as one.
+\text{GEO}.
+$$
 
 ---
 
-# 2. Historical origin
+## 2. Initial mathematical exploration
 
-## 2.1 Initial algebraic motivation
+The earliest stage of the research was developed through an exploratory
+dual representation later referred to as **GDD**.
 
-The earliest exploratory stage was developed under the name **GDD**
-(*Geometría de Firma Dual Dinámica*).
+A representative quantity was written as
 
-A two-component algebraic representation was introduced schematically
-through
-
-\[
+$$
 I = m^2-\mu^2.
-\]
+$$
 
-The purpose of this representation was exploratory.
+The objective was to investigate whether a quantity normally treated
+through one effective component could admit a complementary
+representation while preserving a meaningful invariant structure.
 
-The minus sign belongs to the mathematical representation and does not
-imply negative physical mass, negative energy, antigravity, or a
-repulsive gravitational sector.
+The minus sign in this expression belongs to the mathematical
+representation.
 
-GDD asked whether complementary components could reveal mathematical
-structure hidden by a one-component description.
+It does not imply negative physical mass, negative energy, antigravity,
+or a repulsive gravitational sector.
 
-Several reformulations followed.
-
-The importance of this stage to the current GEO project is therefore
-primarily historical: it established the dual-representation question
-from which the later conservative architecture developed.
+The importance of this stage is historical and methodological: it
+introduced the complementary-representation question that later evolved
+into the GEO framework.
 
 ---
 
-# 3. From GDD to an active/complementary description
+## 3. GDDv2 and the active/complementary partition
 
-A later stage, developed through **GDDv2** and subsequently the
-**SOP** investigations, replaced the original exploratory
-representation with a simpler active/complementary partition.
+The initial representation was subsequently simplified and tested
+numerically.
 
-Schematically,
+In later GDDv2 and SOP investigations, the description was organized
+through an active and complementary partition of an effective sector,
 
-\[
+$$
 \rho_d
 =
 \rho_d^{\mathrm{active}}
 +
 \rho_d^{\mathrm{comp}},
-\]
+$$
 
 with
 
-\[
-\rho_d^{\mathrm{active}}=\xi\rho_d,
-\qquad
-\rho_d^{\mathrm{comp}}=(1-\xi)\rho_d.
-\]
+$$
+\rho_d^{\mathrm{active}}
+=
+\xi\rho_d,
+$$
 
-At this stage the effective coupling was treated as a quantity to be
-tested numerically rather than fixed in advance.
+and
 
-Across several archived exploratory configurations, free fits repeatedly
-occupied two numerical regions approximately around
+$$
+\rho_d^{\mathrm{comp}}
+=
+(1-\xi)\rho_d.
+$$
 
-\[
+At this stage the effective coupling was not fixed geometrically in
+advance.
+
+It was explored numerically.
+
+Several archived configurations repeatedly produced values in narrow
+regions approximately around
+
+$$
 f_c \simeq 0.740-0.742
-\]
+$$
 
 and
 
-\[
+$$
 f_c \simeq 0.774088.
-\]
+$$
 
-These values preceded the later GEO-Hubble construction.
+These numerical recurrences motivated a later geometric comparison.
 
-They were subsequently compared with simple geometric candidates,
-
-\[
-f_c^{\mathrm{base}}=\frac34=0.75,
-\]
-
-\[
-f_c^{\mathrm{node}}=\sqrt{\frac35}
-=0.774596669241483\ldots,
-\]
-
-and
-
-\[
-f_c^{\mathrm{ideal}}=\frac{\pi}{4}
-=0.785398163397448\ldots.
-\]
-
-These comparisons were retrospective.
-
-They should not be interpreted as independent out-of-sample predictions
-or as measurements of fundamental constants.
-
-Their role was to identify simple geometric structures capable of
-organizing recurrent numerical behavior observed during development.
+They were not originally introduced as exact constants.
 
 ---
 
-# 4. Canonical GEO node
+## 4. From numerical recurrence to geometric candidates
 
-The numerical recurrence near
+The recurrent numerical regions were subsequently compared with simple
+geometric values.
 
-\[
-f_c\simeq0.774088
-\]
+Three useful reference candidates were
 
-motivated closer examination of
+$$
+f_c^{\mathrm{base}}
+=
+\frac34
+=
+0.75,
+$$
 
-\[
-f_c=\sqrt{\frac35}.
-\]
+$$
+f_c^{\mathrm{node}}
+=
+\sqrt{\frac35}
+=
+0.774596669241483\ldots,
+$$
 
-The corresponding structural quantity is
+and
 
-\[
+$$
+f_c^{\mathrm{ideal}}
+=
+\frac{\pi}{4}
+=
+0.785398163397448\ldots.
+$$
+
+The comparison was retrospective.
+
+It should not be interpreted as an independent statistical discovery of
+these constants.
+
+Its role was to identify whether a simple geometric structure could
+organize recurrent numerical behavior already observed during the
+development of the framework.
+
+The recurrence nearest
+
+$$
+\sqrt{\frac35}
+$$
+
+motivated the canonical GEO node.
+
+---
+
+## 5. Canonical GEO structural node
+
+The canonical structural relation is
+
+$$
 \boxed{
-\eta=f_c^2=\frac35
+\eta=\frac35
 }
-\]
+$$
+
+with
+
+$$
+\boxed{
+f_c=\sqrt{\eta}
+=
+\sqrt{\frac35}
+}
+$$
 
 and therefore
 
-\[
-\boxed{
-f_c=\sqrt{\eta}
-=\sqrt{\frac35}
-}.
-\]
-
-The canonical GEO structural node is consequently
-
-\[
+$$
 \eta=0.6,
+$$
+
+$$
+f_c
+=
+0.774596669241483\ldots
+$$
+
+The complementary fraction is
+
+$$
+B=1-\eta
+=
+\frac25
+=
+0.4.
+$$
+
+Thus the canonical lossless GEO partition is
+
+$$
+\boxed{
+A=\frac35,
 \qquad
-f_c=0.774596669241483\ldots
-\]
+B=\frac25.
+}
+$$
 
-with complementary fraction
-
-\[
-B=1-\eta=\frac25=0.4.
-\]
-
-An important historical distinction must be maintained:
-
-> The value \(\eta=3/5\) was not obtained by fitting a later Hubble
-> projection to a desired value of \(H_0\).
-
-The Hubble application belongs to a later layer of the research program.
+This structural node became part of the mature mathematical
+architecture after the exploratory numerical stage.
 
 ---
 
-# 5. Current GEO mathematical architecture
+## 6. Conservative architecture
 
-The mature GEO formulation separates historical motivation,
-mathematical definition, executable implementation, application
-hypotheses, and empirical tests.
+The general normalized GEO state is written as
 
-These levels should not be conflated.
-
-The general conservative state is written
-
-\[
+$$
 \boxed{
 A+B+L=T
 }
-\]
+$$
 
-with normalized total
+with
 
-\[
+$$
 T=1.
-\]
+$$
 
 Here:
 
-- \(A\) denotes the active/observable partition;
-- \(B\) denotes the complementary partition;
-- \(L\) represents an explicit latent or loss contribution when required.
+- $A$ is the active/observable contribution;
+- $B$ is the complementary contribution;
+- $L$ is an explicit latent or loss term when required.
 
-For the canonical lossless state,
+For the lossless case,
 
-\[
+$$
 L=0,
-\]
+$$
 
 so that
 
-\[
-A+B=1.
-\]
-
-The canonical structural assignment is
-
-\[
-A=\eta=\frac35,
-\]
-
-\[
-B=1-\eta=\frac25.
-\]
-
-Thus,
-
-\[
+$$
 \boxed{
-A=\frac35,\qquad B=\frac25
+A+B=1.
 }
-\]
+$$
 
-for the canonical conservative state.
+For the canonical GEO state,
+
+$$
+A=\eta=\frac35,
+$$
+
+and
+
+$$
+B=1-\eta=\frac25.
+$$
+
+This conservative partition is one of the central mathematical elements
+of the present framework.
 
 ---
 
-# 6. Structural parameter and effective state are distinct
+## 7. Structural parameter and effective state
 
-One of the most important clarifications in the current GEO
-architecture is the distinction between the structural parameter
-\(\eta\) and an application-dependent effective state
-\(\mu_{\mathrm{eff}}\).
+A central clarification in the mature GEO architecture is the
+distinction between the structural parameter $\eta$ and the
+application-dependent effective state $\mu_{\mathrm{eff}}$.
 
-The general radial/effective-state relation is
+They are not the same mathematical object.
 
-\[
+The general effective-state law is
+
+$$
 \boxed{
 R^3=\mu_{\mathrm{eff}}
 }
-\]
+$$
 
 or equivalently
 
-\[
+$$
 \boxed{
 R=\mu_{\mathrm{eff}}^{1/3}.
 }
-\]
+$$
 
-This is the canonical radial law used by the current framework.
+Therefore, in general,
 
-In general,
-
-\[
+$$
 \boxed{
-\mu_{\mathrm{eff}}\neq\eta
+\mu_{\mathrm{eff}}\neq\eta.
 }
-\]
+$$
 
-unless a particular application explicitly introduces that
-identification.
+A particular application may assign equal numerical values, but such an
+assignment belongs to the application.
 
-Therefore the expression
-
-\[
-R=\eta^{1/3}
-\]
-
-must **not** be treated as a universal GEO identity.
-
-The structural node
-
-\[
-\eta=\frac35
-\]
-
-and the application state
-
-\[
-\mu_{\mathrm{eff}}
-\]
-
-belong to different conceptual layers.
+It is not a universal GEO identity.
 
 ---
 
-# 7. Bifocal conservative organization
+## 8. Bifocal organization
 
-The conservative GEO state can be represented through two complementary
+The conservative state may be represented through two complementary
 foci,
 
-\[
+$$
 F_O=A,
-\]
+$$
 
-\[
+and
+
+$$
 F_C=B.
-\]
+$$
 
 Their total satisfies
 
-\[
+$$
 F_O+F_C=T-L.
-\]
+$$
 
-In the lossless state,
+For the lossless state,
 
-\[
+$$
 F_O+F_C=1.
-\]
+$$
 
-An admissible tangent redistribution preserves the total:
+An admissible redistribution preserves the total,
 
-\[
+$$
 \delta F_O+\delta F_C=0.
-\]
+$$
 
-The purpose of this construction is to represent complementary
-organization without violating the declared conservation relation.
+This representation provides the basis for the projective layer of the
+framework.
 
 ---
 
-# 8. Orthogonal projective layer
+## 9. Canonical projective operator
 
-The canonical two-dimensional projective transformation is represented
-by
+The canonical two-dimensional GEO transformation is represented by the
+orthogonal operator
 
-\[
+$$
 \boxed{
 Q=
 \frac{1}{\sqrt2}
 \begin{pmatrix}
 1 & 1\\
 -1 & 1
-\end{pmatrix}
+\end{pmatrix}.
 }
-\]
+$$
 
-with
+It satisfies
 
-\[
-Q^TQ=I,
-\]
+$$
+Q^TQ=I
+$$
 
 and
 
-\[
+$$
 \det Q=1.
-\]
+$$
 
-The associated angle is
+The associated canonical angle is
 
-\[
+$$
 \boxed{
-\theta=\frac{\pi}{4}
-}.
-\]
+\theta=\frac{\pi}{4}.
+}
+$$
 
-Because \(Q\) is orthogonal, the full transformed state preserves the
-Euclidean norm and admits inverse reconstruction through
+For a conservative vector
 
-\[
+$$
+\mathbf v=
+\begin{pmatrix}
+A\\
+B
+\end{pmatrix},
+$$
+
+the projected state is
+
+$$
+\mathbf v'=Q\mathbf v.
+$$
+
+The first projected coordinate is therefore
+
+$$
+A'
+=
+\frac{A+B}{\sqrt2}.
+$$
+
+For the lossless normalized state,
+
+$$
+A+B=1,
+$$
+
+which gives
+
+$$
+\boxed{
+A'=\frac1{\sqrt2}.
+}
+$$
+
+The complete orthogonal transformation preserves norm and admits inverse
+reconstruction through
+
+$$
 Q^{-1}=Q^T.
-\]
-
-This does not imply that a complete original state can be reconstructed
-from one projected coordinate alone.
-
-The distinction between complete transformed information and a single
-observable projection is essential.
+$$
 
 ---
 
-# 9. Harmonic duality
+## 10. Projection and reconstruction
 
-The projective layer admits the complementary harmonic pair
+The GEO projective layer distinguishes between a complete transformed
+state and a single projected coordinate.
 
-\[
+The full projected pair retains the information required for inverse
+reconstruction.
+
+The observable projected coordinate alone is not assumed to uniquely
+determine the full complementary state.
+
+This distinction is important both mathematically and physically.
+
+The current executable implementation therefore exposes:
+
+- projected observable component;
+- projected complementary component;
+- latent component when present;
+- reconstructed state;
+- numerical closure errors.
+
+---
+
+## 11. Harmonic organization
+
+A complementary harmonic representation can be written as
+
+$$
 H_O=\cos^2\theta,
-\]
-
-\[
-H_C=\sin^2\theta,
-\]
-
-with
-
-\[
-H_O+H_C=1.
-\]
-
-At the canonical angle
-
-\[
-\theta=\frac{\pi}{4},
-\]
-
-one obtains
-
-\[
-H_O=H_C=\frac12.
-\]
-
-Two useful derived quantities are
-
-\[
-D_{\mathrm{bal}}=\cos(2\theta)
-\]
+$$
 
 and
 
-\[
+$$
+H_C=\sin^2\theta.
+$$
+
+These satisfy
+
+$$
+H_O+H_C=1.
+$$
+
+At the canonical angle
+
+$$
+\theta=\frac{\pi}{4},
+$$
+
+the two contributions become
+
+$$
+H_O=H_C=\frac12.
+$$
+
+Associated quantities include
+
+$$
+D_{\mathrm{bal}}
+=
+\cos(2\theta),
+$$
+
+and
+
+$$
 D_{\mathrm{coup}}
 =
 \frac14\sin^2(2\theta).
-\]
+$$
 
 At the canonical state,
 
-\[
+$$
 D_{\mathrm{bal}}=0,
-\]
+$$
 
-\[
+and
+
+$$
 D_{\mathrm{coup}}=\frac14.
-\]
+$$
 
-These quantities describe the mathematical projective/harmonic
-organization of the framework.
+These quantities describe the mathematical harmonic layer.
 
 They should not automatically be identified with physical observables.
 
 ---
 
-# 10. Higher-dimensional transport representation
+## 12. Higher-dimensional transport
 
-The mature GEO architecture also studies a five-dimensional transport
+The mature GEO architecture also includes a five-dimensional transport
 representation,
 
-\[
-M_5,
-\]
+$$
+M_5.
+$$
 
-organized mathematically as a \(3+2\) block structure.
+The mathematical organization is constructed as a $3+2$ structure.
 
-The five coordinates are mathematical transport coordinates.
+These coordinates are mathematical transport coordinates.
 
-They are **not automatically five physical dimensions or five specific
-physical observables**.
+They are not automatically five physical dimensions or five directly
+measurable physical quantities.
 
-Any physical interpretation requires an explicit application layer.
+A spectral quantity is defined by
 
-A spectral quantity associated with the transport operator is defined by
-
-\[
+$$
 \boxed{
 \Phi=\rho(M_5)
 }
-\]
+$$
 
 where
 
-\[
-\rho(M_5)=\max_i|\lambda_i|
-\]
+$$
+\rho(M_5)
+=
+\max_i |\lambda_i|.
+$$
 
-is the spectral radius.
+A related coefficient is
 
-A related projection coefficient can then be constructed as
-
-\[
+$$
 \boxed{
-\alpha=\frac{\Phi B}{\sqrt2}.
+\alpha
+=
+\frac{\Phi B}{\sqrt2}.
 }
-\]
+$$
 
-The detailed closure used to construct a particular \(M_5\), including
-residual-memory variables, belongs to the executable realization of the
-operator and should be distinguished from the primitive conservation
-identities of the framework.
+The detailed realization of $M_5$ belongs to the operator layer and must
+be distinguished from the primitive conservation relations.
 
 ---
 
-# 11. What is structural and what is application-dependent
+## 13. Formalization of GEO
 
-The following distinction is central to GEO.
+The mathematical formalization developed after the exploratory and
+numerical stages.
 
-## Structural definitions
+This distinction is deliberate.
 
-Examples include
+The historical sequence is not
 
-\[
-A+B+L=T,
-\]
+$$
+\text{axioms}
+\rightarrow
+\text{prediction}.
+$$
 
-\[
-T=1,
-\]
+It is better represented as
 
-\[
-\eta=\frac35,
-\]
+$$
+\text{exploration}
+\rightarrow
+\text{numerical structure}
+\rightarrow
+\text{geometric interpretation}
+\rightarrow
+\text{formalization}.
+$$
 
-\[
-f_c=\sqrt{\eta},
-\]
+The later GEO-FOUNDATIONS work organizes the mature architecture into
+explicit definitions, operators, conservation relations, projection
+rules, effective-state relations, and reconstruction procedures.
 
-the orthogonal operator \(Q\), and the spectral definition
-
-\[
-\Phi=\rho(M_5).
-\]
-
-## General response law
-
-The effective-state relation is
-
-\[
-R^3=\mu_{\mathrm{eff}}.
-\]
-
-The value of \(\mu_{\mathrm{eff}}\) must be supplied by an application
-or model layer.
-
-## Application hypotheses
-
-A physical application may propose a specific identification of
-\(\mu_{\mathrm{eff}}\), a projected coordinate, or another GEO quantity
-with a physical observable.
-
-Such an identification is an **application hypothesis**.
-
-It is not automatically a universal mathematical identity of GEO.
-
-This separation is used throughout the current research program.
+Later formal definitions should not be projected backward onto the
+earliest GDD experiments as though they had existed from the beginning.
 
 ---
 
-# 12. Historical computational implementation: GEO / CLASS kit
+## 14. Computational development: the original CLASS kit
 
-An important stage in the development of GEO was its implementation as
-a modified **CLASS v3.x** computational environment.
+An important stage in the development of GEO was its implementation in a
+modified **CLASS v3.x** environment.
 
-This repository historically served as the public entry point for that
-work.
+The original computational kit included:
 
-The initial GEO computational kit included source modifications,
-diagnostic scripts, numerical experiments, and reproducibility material
-designed to explore the consequences of GEO-inspired modifications in a
-standard cosmological code base.
+- CLASS source modifications;
+- cosmological diagnostic scripts;
+- exploratory parameter studies;
+- reproducibility material;
+- numerical tests of active/complementary behavior.
 
-That implementation played two important roles:
+This stage demonstrated that GEO-inspired constructions could be
+implemented inside a standard cosmological numerical environment.
 
-1. it provided a concrete numerical environment in which exploratory GEO
-   hypotheses could be tested; and
+It also provided much of the computational provenance that preceded the
+later formal mathematical architecture.
 
-2. it supplied numerical provenance for the transition from the earlier
-   GDD/GDDv2/SOP investigations toward the later mathematical
-   formalization.
-
-The CLASS-based implementation should therefore be understood as a
-historical and computational layer of the GEO research program.
+The CLASS implementation is therefore an important historical component
+of the project.
 
 It is not the definition of GEO itself.
 
-The mathematical architecture can be studied independently of CLASS,
-while cosmological applications may continue to use CLASS or other
-numerical environments as explicit application layers.
-
-Historical numerical outputs contained in earlier releases should also
-not be interpreted automatically as current canonical GEO predictions.
+The mathematical framework can be studied independently of CLASS.
 
 ---
 
-# 13. GEO External Operator
+## 15. GEO External Operator
 
-The mathematical architecture has subsequently been implemented in a
-separate executable project:
+The mathematical architecture is also implemented through the public
 
 **GEO External Operator**
 
-Repository:
+repository:
 
 https://github.com/LeoTorreblanca/GEO-External-Operator
 
-The External Operator is intended to provide a compact executable
-realization of the GEO mathematical chain outside the original
-cosmological development environment.
+The External Operator provides a standalone executable implementation of
+the GEO operator chain.
 
-Conceptually, the implemented chain follows the structure
+Its public state is based on explicit inputs such as
 
-\[
-T
-\rightarrow
-(A,B,L)
-\rightarrow
-(\eta,f_c)
-\rightarrow
-\mu_{\mathrm{eff}}
+$$
+(\eta,L,\mu_{\mathrm{eff}}).
+$$
+
+The general computational structure is
+
+$$
+(\eta,L,\mu_{\mathrm{eff}})
 \rightarrow
 R
 \rightarrow
-\text{bifocal state}
+\text{geometric state}
 \rightarrow
-Q
-\rightarrow
-\text{harmonic layer}
+\text{projection}
 \rightarrow
 M_5
 \rightarrow
 \Phi
 \rightarrow
-\alpha.
-\]
+\alpha
+\rightarrow
+\text{reconstruction}.
+$$
 
-Its purpose is reproducibility and mathematical auditing.
+The operator is designed to test mathematical and computational
+consistency outside the original CLASS development environment.
 
-For declared inputs it can test, among other properties,
+Successful execution demonstrates agreement between the declared
+equations and their software implementation.
 
-- conservation;
-- the canonical coupling relation;
-- the effective-state radial law;
-- orthogonality;
-- harmonic closure;
-- norm preservation;
-- inverse reconstruction;
-- transport construction;
-- spectral evaluation.
-
-Successful numerical closure demonstrates consistency between the
-declared equations and their executable implementation.
-
-It does **not**, by itself, establish that a physical system must obey
-the GEO mapping.
-
-The External Operator should therefore be regarded as an executable
-reference layer of the framework rather than as independent empirical
-evidence for GEO.
+It does not by itself constitute empirical validation of a physical
+interpretation.
 
 ---
 
-# 14. GEO-Hubble as a separate application
+## 16. Research layers
 
-The Hubble problem is not part of the historical origin of GEO and is
-not used here to define its canonical mathematical architecture.
-
-It is treated as a separate physical application.
-
-The dedicated **GEO-Hubble Geometric Projection** work evaluates a
-specific projective hypothesis constructed from the canonical GEO
-architecture.
-
-That separation is deliberate:
-
-\[
-\text{GEO architecture}
-\rightarrow
-\text{application adapter}
-\rightarrow
-\text{Hubble hypothesis}
-\rightarrow
-\text{cosmological test}.
-\]
-
-The general GEO relation remains
-
-\[
-R^3=\mu_{\mathrm{eff}},
-\]
-
-whereas a Hubble application must explicitly state whatever
-application-specific effective state it proposes.
-
-Consequently, no Hubble-channel identification should be promoted to a
-universal GEO identity.
-
-The purpose of the dedicated Hubble project is to determine what follows
-when a declared projective mapping is applied and tested under specified
-cosmological assumptions.
-
-It should therefore be read as an **evaluation of a GEO projective
-hypothesis**, not as the definition of the GEO framework itself.
-
-Historical Hubble calculations previously included directly in this
-repository belong to the provenance of the research program and should
-not be interpreted as the current canonical formulation.
-
----
-
-# 15. Separation of research layers
-
-For clarity, the GEO research program distinguishes the following
-levels.
+The GEO research program now distinguishes several levels of work.
 
 | Layer | Role |
 |---|---|
 | GDD | Initial exploratory dual representation |
-| GDDv2 | Reduced phenomenological representation |
+| GDDv2 | Reduced phenomenological development |
 | SOP | Active/complementary numerical exploration |
-| GEO | Geometric consolidation and canonical structural node |
+| GEO | Geometric consolidation |
 | GEO-FOUNDATIONS | Formal mathematical architecture |
-| GEO / CLASS kit | Historical cosmological implementation and numerical test environment |
-| GEO External Operator | Separate executable realization of the mathematical operator chain |
-| GEO-Hubble | Application-specific evaluation of a projective Hubble hypothesis |
-| Cosmological inference | Statistical tests performed under explicitly declared datasets, likelihoods, and priors |
+| GEO / CLASS kit | Historical cosmological implementation |
+| GEO External Operator | Standalone executable mathematical operator |
+| Application repositories | Physical or observational hypotheses built on top of GEO |
+| Statistical inference | Dataset-dependent tests of specific applications |
 
-These layers are related historically and computationally, but they are
-not interchangeable.
+These layers should not be conflated.
 
-In particular:
+A mathematical identity is not automatically a physical law.
 
-- historical numerical recurrence is not a mathematical proof;
-- a mathematical definition is not empirical validation;
-- executable closure is not physical confirmation;
-- an application hypothesis is not a universal identity;
-- a deterministic consequence of an application is not statistical
-  evidence by itself;
-- a likelihood improvement is not automatically a fundamental physical
-  explanation.
+A working software implementation is not automatically empirical
+validation.
+
+An application-specific mapping is not automatically a universal
+framework identity.
 
 ---
 
-# 16. Scientific interpretation
+## 17. Applications
 
-GEO should presently be understood as a developing mathematical and
-computational framework.
+GEO is intended to support explicitly declared application layers.
 
-The current architecture provides:
+An application may specify:
+
+$$
+\mu_{\mathrm{eff}},
+$$
+
+an observable mapping, an external physical model, and a corresponding
+validation strategy.
+
+The general logic is
+
+$$
+\text{GEO architecture}
+\rightarrow
+\text{application mapping}
+\rightarrow
+\text{derived consequence}
+\rightarrow
+\text{test}.
+$$
+
+The application mapping must be justified independently.
+
+---
+
+## 18. GEO-Hubble geometric projection
+
+One application currently under study is the GEO-Hubble projective
+hypothesis.
+
+This application is **not part of the historical origin or mathematical
+definition of GEO**.
+
+It asks whether a particular projective relationship derived from the
+canonical GEO architecture can be meaningfully applied to a Hubble-scale
+observable.
+
+The Hubble project is therefore organized separately from the core
+framework.
+
+Its logical role is
+
+$$
+\text{GEO architecture}
+\rightarrow
+\text{Hubble application hypothesis}
+\rightarrow
+\text{numerical consequence}
+\rightarrow
+\text{cosmological test}.
+$$
+
+Changes to, or rejection of, that application do not alter the general
+mathematical definition of the GEO operator.
+
+Historical Hubble-specific constructions remain accessible through the
+Git history and archived releases for provenance.
+
+---
+
+## 19. Cosmological inference
+
+GEO has also been evaluated using conventional cosmological numerical
+and statistical environments.
+
+These studies include CLASS-based calculations and dedicated
+cosmological inference workflows.
+
+Such analyses belong to the application/testing layer.
+
+They do not define the mathematical framework.
+
+In particular, likelihood improvements, posterior constraints, or
+parameter fits must be interpreted within the assumptions, priors,
+datasets, and convergence properties of the corresponding experiment.
+
+---
+
+## 20. Scientific scope
+
+At its present stage, GEO should be understood as a developing
+mathematical and computational framework.
+
+The framework provides:
 
 - a conservative active/complementary state;
 - a canonical structural node;
-- a general effective-state radial relation;
-- bifocal organization;
+- an application-dependent effective state;
+- a radial relation;
+- a bifocal representation;
 - an orthogonal projective layer;
-- harmonic duality;
+- harmonic organization;
 - a higher-dimensional transport representation;
-- spectral invariants;
-- executable reconstruction and closure tests;
-- explicit boundaries between mathematical structure and physical
-  application.
+- spectral quantities;
+- reconstruction and numerical closure tests.
 
-The framework does not, merely from these definitions, establish a
-complete theory of gravity.
+These elements do not by themselves establish a complete theory of
+gravity.
 
-It does not derive electromagnetism and gravity from one another.
+The framework does not claim that electromagnetism and gravity are the
+same interaction.
 
 It does not require negative physical mass or negative physical energy.
 
-It does not imply that every effective state satisfies
+It does not require
 
-\[
-\mu_{\mathrm{eff}}=\eta.
-\]
+$$
+\mu_{\mathrm{eff}}=\eta
+$$
 
-It does not identify the coordinates of the mathematical transport
-operator automatically with physical observables.
+as a universal identity.
 
-Those questions require additional physical models and empirical tests.
-
----
-
-# 17. Provenance and non-retroactive interpretation
-
-GEO has evolved through several conceptual and computational stages.
-
-For this reason, equations appearing in historical releases should be
-interpreted in the context in which they were introduced.
-
-Later mathematical definitions must not be projected backward onto
-GDD or GDDv2 as though they had been present from the beginning.
-
-Likewise, historical exploratory numerical results must not be promoted
-retroactively to independent predictions.
-
-The canonical node
-
-\[
-\eta=\frac35
-\]
-
-was motivated through the historical numerical and geometric sequence
-described above and was subsequently incorporated into the mature GEO
-architecture.
-
-The current mathematical framework then gives that node a structural
-role independent of any particular Hubble likelihood calculation.
-
-This repository preserves that developmental provenance while directing
-current mathematical and application-specific work to their appropriate
-layers.
+Physical interpretation requires an explicit application layer and
+empirical testing.
 
 ---
 
-# 18. Reproducibility philosophy
+## 21. Reproducibility principle
 
-The GEO project follows a separation between:
+The project separates five levels:
 
-\[
-\text{provenance},
-\]
+$$
+\boxed{
+\text{provenance}
+\rightarrow
+\text{definition}
+\rightarrow
+\text{implementation}
+\rightarrow
+\text{application}
+\rightarrow
+\text{test}.
+}
+$$
 
-\[
-\text{definition},
-\]
+A reproducible result should make clear:
 
-\[
-\text{implementation},
-\]
+- which quantities are defined;
+- which quantities are supplied;
+- which quantities are derived;
+- which software version was used;
+- which application assumptions were introduced;
+- which data or likelihoods were applied;
+- which numerical tolerances were accepted.
 
-\[
-\text{application},
-\]
-
-and
-
-\[
-\text{empirical inference}.
-\]
-
-A reproducible implementation should make it possible to determine
-exactly which layer a reported result belongs to.
-
-Where possible, computational releases should therefore provide:
-
-- explicit equations;
-- fixed numerical inputs;
-- source-code provenance;
-- versioned dependencies;
-- deterministic regression tests;
-- generated numerical outputs;
-- clear application assumptions;
-- separation between fitted and fixed quantities.
-
-This structure is intended to make both confirmation and falsification
-of individual GEO claims easier.
+This separation is intended to make both confirmation and falsification
+of individual claims easier.
 
 ---
 
-# 19. Repository role
+## 22. Repository role
 
-This repository is the **historical root repository of GEO — Hidden
-Geometry**.
+This repository is the historical and architectural root of
+
+**GEO — Hidden Geometry**.
 
 Its purpose is to preserve and document:
 
-1. the origin of the research question;
-2. the GDD/GDDv2/SOP developmental path;
-3. the numerical provenance of the canonical GEO node;
-4. the transition to the current geometric architecture;
-5. the original CLASS-based computational implementation;
-6. the relationship between the original framework and later,
-   more specialized GEO repositories.
+1. the original mathematical motivation;
+2. the GDD and GDDv2 development;
+3. the SOP numerical stage;
+4. the emergence of recurrent numerical structure;
+5. the transition to a geometric interpretation;
+6. the canonical GEO architecture;
+7. the original CLASS implementation;
+8. the relationship with later formal and application-specific
+   repositories.
 
-The repository should not be interpreted as a container in which every
-historical experiment represents the current canonical theory.
-
-Specialized later work is maintained separately so that mathematical
-architecture, executable implementation, and physical applications can
-be audited without conflating their evidential roles.
+Historical experiments remain part of the provenance of the project,
+but they should not automatically be interpreted as the current
+canonical formulation.
 
 ---
 
-# 20. Related GEO projects
+## 23. Related projects
 
-## GEO-FOUNDATIONS
+### GEO External Operator
 
-Formal mathematical development of the mature GEO architecture,
-including conservation, effective-state structure, projective geometry,
-transport operators, and mathematical closure.
-
-## GEO External Operator
-
-Separate executable implementation of the GEO operator architecture:
+Standalone executable implementation of the GEO mathematical operator:
 
 https://github.com/LeoTorreblanca/GEO-External-Operator
 
-Its role is mathematical and computational reproducibility.
+### GEO-FOUNDATIONS
 
-## GEO-Hubble Geometric Projection
+Formal mathematical development of the mature framework.
 
-Dedicated evaluation of a Hubble-channel projective hypothesis derived
-from a declared GEO application adapter.
+### GEO Cosmology / MCMC
 
-This project is intentionally separated from the root framework so that
-the general GEO architecture does not depend on the validity of one
-cosmological application.
+Application-specific cosmological inference and reproducibility work.
 
-## GEO cosmological / MCMC work
+### GEO-Hubble Geometric Projection
 
-Dedicated cosmological environments test declared GEO realizations using
-standard numerical and statistical tools such as CLASS and Cobaya.
+Dedicated evaluation of a projective Hubble hypothesis derived from the
+GEO architecture.
 
-These calculations constitute application-level tests rather than
-definitions of the underlying mathematical framework.
+Application repositories are intentionally separated from the core
+framework.
 
 ---
 
-# 21. Canonical relations at a glance
+## 24. Canonical relations
 
-The principal relations of the current framework include
+The principal current GEO relations include
 
-\[
+$$
 \boxed{
-A+B+L=T,\qquad T=1
+A+B+L=1
 }
-\]
+$$
 
-and, for the canonical lossless state,
+and, for the lossless state,
 
-\[
+$$
 \boxed{
-A=\eta=\frac35,
-\qquad
-B=1-\eta=\frac25,
-\qquad
-L=0.
+A+B=1.
 }
-\]
+$$
 
-The canonical coupling factor is
+The canonical structural node is
 
-\[
+$$
+\boxed{
+\eta=\frac35.
+}
+$$
+
+The associated coupling amplitude is
+
+$$
 \boxed{
 f_c=\sqrt{\eta}
-=\sqrt{\frac35}.
+=
+\sqrt{\frac35}.
 }
-\]
+$$
 
-The general effective-state law is
+The complementary fraction is
 
-\[
+$$
+\boxed{
+B=1-\eta=\frac25.
+}
+$$
+
+The general effective-state radial law is
+
+$$
 \boxed{
 R^3=\mu_{\mathrm{eff}},
 \qquad
 R=\mu_{\mathrm{eff}}^{1/3}.
 }
-\]
+$$
 
 The canonical projective operator is
 
-\[
+$$
 \boxed{
 Q=
 \frac1{\sqrt2}
 \begin{pmatrix}
 1&1\\
 -1&1
-\end{pmatrix},
-\qquad
-Q^TQ=I.
+\end{pmatrix}.
 }
-\]
+$$
 
-The harmonic pair satisfies
+The spectral definition is
 
-\[
+$$
 \boxed{
-H_O=\cos^2\theta,
-\qquad
-H_C=\sin^2\theta,
-\qquad
-H_O+H_C=1.
+\Phi=\rho(M_5).
 }
-\]
+$$
 
-At
+A corresponding coefficient is
 
-\[
-\theta=\frac{\pi}{4},
-\]
-
-\[
-H_O=H_C=\frac12.
-\]
-
-For the declared higher-dimensional transport operator,
-
-\[
-\boxed{
-\Phi=\rho(M_5)=\max_i|\lambda_i|
-}
-\]
-
-and a corresponding projection coefficient may be defined as
-
-\[
+$$
 \boxed{
 \alpha=\frac{\Phi B}{\sqrt2}.
 }
-\]
+$$
 
-These equations belong to different structural levels and should be
-interpreted according to the definitions given above.
-
----
-
-# 22. Important radial-law clarification
-
-For avoidance of ambiguity, the current canonical radial relation is
-
-\[
-\boxed{
-R=\mu_{\mathrm{eff}}^{1/3}.
-}
-\]
-
-The expression
-
-\[
-R=\eta^{1/3}
-\]
-
-is not a universal GEO law.
-
-It can occur only when a particular application explicitly chooses
-
-\[
-\mu_{\mathrm{eff}}=\eta.
-\]
-
-This distinction should be preserved in future documentation,
-implementations, and application repositories.
+These equations belong to different layers of the architecture and
+should be interpreted according to their definitions.
 
 ---
 
-# 23. Research status
+## 25. Historical provenance
 
-GEO remains an open research program.
+GEO evolved through multiple exploratory and formal stages.
 
-The mathematical architecture can be tested for internal consistency.
+For this reason, historical versions may contain:
 
-Its executable realizations can be tested for reproducibility.
+- provisional notation;
+- application-specific assumptions;
+- earlier software interfaces;
+- superseded physical mappings;
+- exploratory numerical interpretations.
 
-Individual physical adapters can be tested against observations.
+Those materials remain valuable as scientific provenance.
 
-Those are distinct questions.
-
-A failure of a particular application does not by itself invalidate a
-mathematical identity, just as successful numerical closure of the
-mathematics does not by itself establish a physical law.
-
-The objective of the project is therefore not to collapse these levels
-into a single claim, but to expose them clearly enough that each can be
-examined independently.
-
----
-
-# 24. Citation and historical versions
-
-When citing GEO results, please identify the specific repository,
-release, or archived version from which the result was obtained.
-
-Because the framework has undergone substantial development, historical
-releases may contain exploratory equations, numerical experiments, or
-application-specific assumptions that are no longer part of the current
-canonical architecture.
+They should not replace the current mathematical definitions.
 
 Version-specific citation is therefore strongly recommended.
 
-Historical artifacts should be retained for provenance when appropriate,
-but they should not be used as substitutes for the current definitions.
-
 ---
 
-# 25. Author
+## 26. Citation
+
+Author:
 
 **Leonel Hernán Torreblanca**  
 Independent Researcher  
 Buenos Aires, Argentina
 
-GEO — Hidden Geometry
+Framework:
+
+**GEO — Hidden Geometry**
+
+Main framework archive:
+
+https://doi.org/10.5281/zenodo.20225304
+
+When citing a specialized GEO result, please cite the corresponding
+repository or archived release associated with that result.
 
 ---
 
-# 26. Summary
+## 27. License and research status
 
-GEO began with a mathematical question inspired by the differing
-structure of formally similar inverse-square laws.
+The software components of the GEO project are released according to the
+licenses included in their respective repositories.
 
-That question produced an exploratory dual representation.
+GEO remains an open research program.
 
-The dual representation evolved into an active/complementary numerical
-framework.
+The framework is intended to make its assumptions, mathematical
+relations, computational implementations, and application boundaries
+explicit and reproducible.
+
+---
+
+## 28. Summary
+
+GEO began from a mathematical question about whether complementary
+structure could exist behind an apparently scalar representation.
+
+That question led to exploratory dual models.
+
+Those models evolved into active/complementary numerical experiments.
 
 Recurring numerical regions motivated comparison with simple geometric
 structures.
 
 That process led to the canonical structural node
 
-\[
+$$
 \boxed{
 \eta=\frac35.
 }
-\]
+$$
 
-The mature framework now separates the structural node from the general
-effective state,
+The mature architecture now distinguishes that structural parameter from
+the general effective state,
 
-\[
+$$
 \boxed{
-R^3=\mu_{\mathrm{eff}},
+R^3=\mu_{\mathrm{eff}}.
 }
-\]
+$$
 
-and develops conservative, projective, harmonic, and transport
-operators around that distinction.
+The framework develops conservative, projective, harmonic, transport,
+spectral, and reconstruction layers around that distinction.
 
-The original CLASS-based kit records an important computational stage of
-this development.
+The original CLASS kit records an important computational stage.
 
-The GEO External Operator provides a separate executable realization of
-the mathematical architecture.
+The GEO External Operator provides a standalone executable realization
+of the current mathematical architecture.
 
-GEO-Hubble is treated separately as an evaluation of a specific
-projective application hypothesis.
+Physical applications, including GEO-Hubble, are treated separately as
+explicit hypotheses to be tested rather than as definitions of the
+framework itself.
 
-This separation —
+The current organizational principle is therefore
 
-\[
+$$
 \boxed{
-\text{history}
+\text{origin}
 \rightarrow
-\text{mathematics}
+\text{exploration}
+\rightarrow
+\text{geometry}
+\rightarrow
+\text{formalization}
 \rightarrow
 \text{implementation}
 \rightarrow
 \text{application}
 \rightarrow
-\text{test}
+\text{test}.
 }
-\]
-
-— defines the current organization of the GEO research program.
+$$
