@@ -207,7 +207,11 @@ $$
 Thus the canonical lossless GEO partition is
 
 $$
-\boxed{A=\frac35, \qquadB=\frac25.}
+\boxed{A=\frac{3}{5}}
+$$
+
+$$
+\boxed{B=\frac{2}{5}}
 $$
 
 This structural node became part of the mature mathematical
@@ -341,7 +345,7 @@ The canonical two-dimensional GEO transformation is represented by the
 orthogonal operator
 
 $$
-\boxed{Q=\frac{1}{\sqrt2}\begin{pmatrix}1 & 1\\-1 & 1\end{pmatrix}.}
+\boxed{Q=\frac{1}{\sqrt{2}}\begin{bmatrix}1 & 1 \\-1 & 1\end{bmatrix}}
 $$
 
 It satisfies
