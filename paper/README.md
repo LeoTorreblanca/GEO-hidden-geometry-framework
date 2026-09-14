@@ -14,14 +14,14 @@ In particular, the present canonical architecture distinguishes the structural
 parameter \(\eta\) from the application-dependent effective state
 \(\mu_{\mathrm{eff}}\), with general radial law
 
-\[
+$$
 R^3=\mu_{\mathrm{eff}},
-\]
+$$
 
 or equivalently
 
-\[
+$$
 R=\mu_{\mathrm{eff}}^{1/3}.
-\]
+$$
 
 Historical versions are retained to preserve the development record of GEO.
