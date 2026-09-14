@@ -1,19 +1,47 @@
-# 🚀 GEO v1.1 - Technical Validation Update (May 2026)
+# GEO Release Notes
 
-This update marks the transition from an exploratory framework to a **reproducible technical implementation**.
+## Historical note
 
-### 🛠️ New in this release:
-* **CLASS-GEO Launch Kit:** Full integration of the GEO axiomatic framework into the **CLASS v3.x** cosmological code.
-* **Axiomatic Patch:** Source code patches (`.patch`) for high-precision validation of the Hubble Tension solution.
-* **Deterministic Validation:** $H_0 = 73.040000000000$ (12-digit precision) is now reproducible through the provided diagnostic scripts.
-* **Automated Deployment:** Included `install_geo.sh` for standard Unix/Linux environments.
+Earlier GEO development releases included a Hubble-specific construction
+that reproduced
 
-### 📋 Current Status:
-* **Technical Implementation:** Verified and ready for independent auditing.
-* **Intellectual Property:** Under **Restricted Technical Verification License**.
-* **Independent Research:** Authored by **Leonel Hernán Torreblanca** (DNI: 32.669.500).
+\[
+H_0 = 73.04\ {\rm km\,s^{-1}\,Mpc^{-1}}
+\]
 
----
+through a realization in which the effective radial state was identified
+with the canonical architectural parameter.
 
-**Author's Note:**
-The GEO framework is now open for rigorous falsification through its direct implementation in standard cosmological Boltzmann solvers.
+That realization is retained in the Git history and historical release
+tags for provenance, but it is no longer part of the canonical GEO
+formulation.
+
+The general radial law is
+
+\[
+R^3=\mu_{\rm eff},
+\]
+
+or equivalently
+
+\[
+R=\mu_{\rm eff}^{1/3},
+\]
+
+where \(\mu_{\rm eff}\) is distinct from the canonical parameter
+\(\eta\).
+
+The identity
+
+\[
+\mu_{\rm eff}=\eta
+\]
+
+is therefore not a universal GEO law.
+
+The current main branch documents the corrected framework architecture.
+A dedicated corrected GEO-Hubble geometric-projection application is
+maintained separately from the core framework.
+
+Historical versions remain available through the repository Git history
+and release tags.

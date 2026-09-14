@@ -1,919 +1,1194 @@
----
-layout: default
----
+# GEO — Hidden Geometry Framework
 
-<meta name="google-site-verification" content="Kila_Tq12oqpqTSHe5GuDIefLwcCL2V8Zenj-O5PUi4" />
+## Historical framework, mathematical architecture, and computational provenance
 
-# 🌌 GEO — Hidden Geometry Framework
-
-**Author:** Leonel Hernan Torreblanca
-
-**Framework:** GEO — Hidden Geometry / Geometría Oculta
-
-📄 **Framework / Paper Archive (OSF):**  
-https://doi.org/10.17605/OSF.IO/YHDMZ
-
-💻 **Framework Code Archive (Zenodo):**  
-https://doi.org/10.5281/zenodo.20225304
-
-🧪 **Cosmological MCMC Validation (GitHub):**  
-https://github.com/LeoTorreblanca/GEO-Cosmology-MCMC
-
-📦 **Cosmological MCMC Archived Release (Zenodo):**  
-https://doi.org/10.5281/zenodo.22103137
+**Author:** Leonel Hernán Torreblanca  
+**Project:** GEO — Hidden Geometry  
+**Repository role:** Historical and architectural root of the GEO research program  
+**Status:** Research / open reproducibility framework
 
 ---
 
-## Overview
+# 1. Overview
 
-GEO (Hidden Geometry Framework) is an exploratory mathematical and
-cosmological framework investigating whether stable geometric transfer
-relations can reproduce selected observational structures through an
-internal operator architecture.
+GEO (Hidden Geometry) is an exploratory mathematical and computational
+framework developed to investigate whether apparently scalar physical
+descriptions can admit a deeper complementary, conservative, and
+projective organization.
 
-The framework explores geometric operators, transfer structures,
-hidden efficiency relations, cosmological applications, planetary
-architectures, and reproducible numerical experiments.
+The project did not originate from the Hubble tension.
 
-The central objective is not to introduce arbitrary phenomenological
-corrections to individual datasets, but to investigate whether a
-restricted geometric architecture can generate stable relations that
-can subsequently be confronted with observations.
+Its earliest motivation was a mathematical observation concerning the
+formal similarity of two inverse-square interactions,
 
-This repository is the principal public repository of the GEO
-framework. It contains mathematical notes, validation studies,
-experimental results, GEO-Lens applications, numerical tests, and
-links to dedicated reproducibility repositories.
-
-GEO should presently be regarded as an exploratory framework under
-active numerical and theoretical testing, not as an established
-physical theory.
-
----
-
-# 1. Canonical GEO architecture
-
-A central quantity appearing throughout the framework is the canonical
-partition / efficiency parameter
-
-$$\eta=\frac{3}{5}=0.6.$$
-
-The corresponding geometric fraction is
-
-$$f_c=\sqrt{\eta}=0.774596669241483.$$
-
-A complementary sector can be represented by
-
-$$f_{\mathrm{out}}=1-f_c.$$
-
-The framework distinguishes the canonical parameter $\eta$ from the
-effective GEO state $\mu$ relevant to a particular physical channel.
-
-The canonical radial relation is
-
-$$R=\mu^{1/3}.$$
-
-This distinction is important.
-
-The expression
-
-$$R=\eta^{1/3}$$
-
-must **not** be interpreted as the general GEO radial law.
-
-The canonical law is
-
-$$R=\mu^{1/3},$$
-
-where $\mu$ denotes the relevant GEO efficiency or effective state.
-
-For the specific Hubble-channel realization investigated in the
-cosmological analysis,
-
-$$\mu_H=\eta=0.6.$$
-
-Therefore, specifically in that channel,
-
-$$R=\mu_H^{1/3}=0.843432665301749.$$
-
-The equality $\mu_H=\eta$ is a channel realization being tested by the
-framework, not a replacement of the general distinction between
-$\mu$ and $\eta$.
-
----
-
-# 2. GEO operator chain
-
-The Hubble realization uses the GEO operator
-
-$$\Phi=1.88961381521168.$$
-
-The associated intensity factor is
-
-$$\alpha=\frac{\Phi(1-\eta)}{\sqrt{2}}=0.534463497023985.$$
-
-Using the Hubble-channel radial state,
-
-$$R=\mu_H^{1/3},$$
-
-the corresponding projection factor is
-
-$$P_{\mathrm{GEO}}=1+\alpha(1-R)=1.083679525222552.$$
-
-The local GEO realization is consequently written as
-
-$$H_{0,\mathrm{GEO}}=P_{\mathrm{GEO}}H_{0,\mathrm{primitive}}.$$
-
-This relation provides the bridge between the primitive cosmological
-expansion parameter and the locally realized GEO value used in the
-Hubble-channel tests.
-
----
-
-# 3. GEO-Lens application to the Hubble tension
-
-The Hubble tension provides one of the principal cosmological test
-cases of the GEO framework.
-
-Historically, the GEO operator chain was evaluated using the reference
-primitive value
-
-$$H_{0,\mathrm{primitive}}=67.40\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-Application of the canonical GEO projection gives
-
-$$H_{0,\mathrm{GEO}}=67.40\times1.083679525222552=73.040000\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-This numerical reconstruction motivated the subsequent CLASS,
-profile-likelihood, and MCMC investigations.
-
-The value $73.040000$ should therefore be understood as the
-**canonical historical GEO reconstruction from the fixed 67.40 input**.
-
-It should not be confused with the posterior value obtained when the
-primitive cosmological parameters themselves are sampled against
-Planck/NPIPE data.
-
-That later statistical test is documented independently in
-GEO-Cosmology-MCMC.
-
----
-
-# 4. Cosmological MCMC validation
-
-A dedicated numerical study now tests the GEO Hubble realization using
-Cobaya, CLASS, Planck likelihoods, matched control calculations, and
-multiple MCMC chains.
-
-👉 **Repository:**  
-https://github.com/LeoTorreblanca/GEO-Cosmology-MCMC
-
-📦 **Archived release:**  
-https://doi.org/10.5281/zenodo.22103137
-
-The principal likelihood configuration includes:
-
-- Planck 2018 low-$\ell$ TT;
-- Planck 2018 low-$\ell$ EE;
-- Planck NPIPE CamSpec TTTEEE;
-- a local-$H_0$ likelihood for the joint comparison;
-- a matched $\Lambda$CDM control.
-
-The analysis preserves the distinction between the primitive
-cosmological expansion parameter and the GEO local realization:
-
-$$H_{0,\mathrm{GEO}}=P_{\mathrm{GEO}}H_{0,\mathrm{primitive}}.$$
-
-The GEO projection factor is fixed by the canonical operator chain,
-
-$$P_{\mathrm{GEO}}=1.083679525222552.$$
-
----
-
-## 4.1 Extended GEO-29 posterior
-
-The extended GEO-29 calculation gives
-
-$$H_{0,\mathrm{primitive}}=67.7213\pm0.4884\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-After application of the canonical GEO projection,
-
-$$H_{0,\mathrm{GEO}}=73.3882\pm0.5292\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-The corresponding posterior means include
-
-$$\Omega_m=0.309465,$$
+\[
+F_C = k\frac{q_1q_2}{r^2},
+\]
 
 and
 
-$$\sigma_8=0.818567.$$
+\[
+F_G = G\frac{m_1m_2}{r^2},
+\]
 
-The best sampled GEO-29 point gives
+together with their different algebraic and physical behavior.
 
-$$H_{0,\mathrm{primitive}}=67.833577\;\mathrm{km\,s^{-1}\,Mpc^{-1}},$$
+This comparison was never intended to assert an equivalence between
+electromagnetism and gravity.
 
-which maps to
+It instead motivated a narrower mathematical question:
 
-$$H_{0,\mathrm{GEO}}=73.509859\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
+> Can a quantity normally represented by a single scalar component
+> conceal a complementary internal structure that becomes visible under
+> a different mathematical representation?
+
+That question initiated a sequence of exploratory models that eventually
+led to the present GEO architecture.
+
+The historical path can be summarized as
+
+\[
+\text{inverse-square-law curiosity}
+\rightarrow
+\text{dual representation}
+\rightarrow
+\text{active/complementary partition}
+\rightarrow
+\text{numerical recurrence}
+\rightarrow
+\text{geometric node}
+\rightarrow
+\text{GEO architecture}.
+\]
+
+This sequence records the provenance of the framework.
+
+It is **not** a derivation of gravity from electromagnetism and should
+not be interpreted as one.
 
 ---
 
-## 4.2 Matched GEO versus ΛCDM comparison
+# 2. Historical origin
 
-The matched best-point comparison gives, for GEO minus the
-$\Lambda$CDM + local-$H_0$ control,
+## 2.1 Initial algebraic motivation
 
-$$\Delta\chi^2_{\mathrm{CMB}}=-3.242000,$$
+The earliest exploratory stage was developed under the name **GDD**
+(*Geometría de Firma Dual Dinámica*).
 
-$$\Delta\chi^2_{\mathrm{local}\,H_0}=-16.696923,$$
+A two-component algebraic representation was introduced schematically
+through
+
+\[
+I = m^2-\mu^2.
+\]
+
+The purpose of this representation was exploratory.
+
+The minus sign belongs to the mathematical representation and does not
+imply negative physical mass, negative energy, antigravity, or a
+repulsive gravitational sector.
+
+GDD asked whether complementary components could reveal mathematical
+structure hidden by a one-component description.
+
+Several reformulations followed.
+
+The importance of this stage to the current GEO project is therefore
+primarily historical: it established the dual-representation question
+from which the later conservative architecture developed.
+
+---
+
+# 3. From GDD to an active/complementary description
+
+A later stage, developed through **GDDv2** and subsequently the
+**SOP** investigations, replaced the original exploratory
+representation with a simpler active/complementary partition.
+
+Schematically,
+
+\[
+\rho_d
+=
+\rho_d^{\mathrm{active}}
++
+\rho_d^{\mathrm{comp}},
+\]
+
+with
+
+\[
+\rho_d^{\mathrm{active}}=\xi\rho_d,
+\qquad
+\rho_d^{\mathrm{comp}}=(1-\xi)\rho_d.
+\]
+
+At this stage the effective coupling was treated as a quantity to be
+tested numerically rather than fixed in advance.
+
+Across several archived exploratory configurations, free fits repeatedly
+occupied two numerical regions approximately around
+
+\[
+f_c \simeq 0.740-0.742
+\]
 
 and
 
-$$\Delta\chi^2_{\mathrm{joint}}=-19.938923.$$
+\[
+f_c \simeq 0.774088.
+\]
 
-Negative values correspond to a lower best-point chi-square for the GEO
-realization in this exact matched likelihood configuration.
+These values preceded the later GEO-Hubble construction.
 
-The best sampled GEO-29 point has
+They were subsequently compared with simple geometric candidates,
 
-$$\chi^2_{\mathrm{CMB}}=10962.919,$$
+\[
+f_c^{\mathrm{base}}=\frac34=0.75,
+\]
 
-$$\chi^2_{\mathrm{local}\,H_0}=0.204111,$$
-
-and
-
-$$\chi^2_{\mathrm{joint}}=10963.123111.$$
-
-The corresponding matched $\Lambda$CDM + local-$H_0$ control has
-
-$$\chi^2_{\mathrm{CMB}}=10966.161,$$
-
-$$\chi^2_{\mathrm{local}\,H_0}=16.901034,$$
+\[
+f_c^{\mathrm{node}}=\sqrt{\frac35}
+=0.774596669241483\ldots,
+\]
 
 and
 
-$$\chi^2_{\mathrm{joint}}=10983.062034.$$
+\[
+f_c^{\mathrm{ideal}}=\frac{\pi}{4}
+=0.785398163397448\ldots.
+\]
 
-These numbers refer specifically to the likelihood, priors, model
-mapping, nuisance parameters, and numerical configuration documented
-in the dedicated MCMC repository.
+These comparisons were retrospective.
 
-They should not be interpreted as a general Bayesian evidence ratio or
-as proof that GEO supersedes $\Lambda$CDM.
+They should not be interpreted as independent out-of-sample predictions
+or as measurements of fundamental constants.
+
+Their role was to identify simple geometric structures capable of
+organizing recurrent numerical behavior observed during development.
 
 ---
 
-# 5. Independent profile test of the canonical eta node
+# 4. Canonical GEO node
 
-The canonical GEO efficiency was also tested through profile-likelihood
-calculations in which the corresponding geometric fraction was allowed
-to vary.
+The numerical recurrence near
 
-The wide profile gives
+\[
+f_c\simeq0.774088
+\]
 
-$$f_{c,\mathrm{best}}=0.774088414673177.$$
+motivated closer examination of
 
-Since
+\[
+f_c=\sqrt{\frac35}.
+\]
 
-$$\eta=f_c^2,$$
+The corresponding structural quantity is
 
-this corresponds to
+\[
+\boxed{
+\eta=f_c^2=\frac35
+}
+\]
 
-$$\eta_{\mathrm{best}}=0.599212873731233.$$
+and therefore
 
-The canonical GEO prediction is
+\[
+\boxed{
+f_c=\sqrt{\eta}
+=\sqrt{\frac35}
+}.
+\]
 
-$$f_{c,\mathrm{GEO}}=\sqrt{\frac{3}{5}}=0.774596669241483,$$
+The canonical GEO structural node is consequently
+
+\[
+\eta=0.6,
+\qquad
+f_c=0.774596669241483\ldots
+\]
+
+with complementary fraction
+
+\[
+B=1-\eta=\frac25=0.4.
+\]
+
+An important historical distinction must be maintained:
+
+> The value \(\eta=3/5\) was not obtained by fitting a later Hubble
+> projection to a desired value of \(H_0\).
+
+The Hubble application belongs to a later layer of the research program.
+
+---
+
+# 5. Current GEO mathematical architecture
+
+The mature GEO formulation separates historical motivation,
+mathematical definition, executable implementation, application
+hypotheses, and empirical tests.
+
+These levels should not be conflated.
+
+The general conservative state is written
+
+\[
+\boxed{
+A+B+L=T
+}
+\]
+
+with normalized total
+
+\[
+T=1.
+\]
+
+Here:
+
+- \(A\) denotes the active/observable partition;
+- \(B\) denotes the complementary partition;
+- \(L\) represents an explicit latent or loss contribution when required.
+
+For the canonical lossless state,
+
+\[
+L=0,
+\]
+
+so that
+
+\[
+A+B=1.
+\]
+
+The canonical structural assignment is
+
+\[
+A=\eta=\frac35,
+\]
+
+\[
+B=1-\eta=\frac25.
+\]
+
+Thus,
+
+\[
+\boxed{
+A=\frac35,\qquad B=\frac25
+}
+\]
+
+for the canonical conservative state.
+
+---
+
+# 6. Structural parameter and effective state are distinct
+
+One of the most important clarifications in the current GEO
+architecture is the distinction between the structural parameter
+\(\eta\) and an application-dependent effective state
+\(\mu_{\mathrm{eff}}\).
+
+The general radial/effective-state relation is
+
+\[
+\boxed{
+R^3=\mu_{\mathrm{eff}}
+}
+\]
+
+or equivalently
+
+\[
+\boxed{
+R=\mu_{\mathrm{eff}}^{1/3}.
+}
+\]
+
+This is the canonical radial law used by the current framework.
+
+In general,
+
+\[
+\boxed{
+\mu_{\mathrm{eff}}\neq\eta
+}
+\]
+
+unless a particular application explicitly introduces that
+identification.
+
+Therefore the expression
+
+\[
+R=\eta^{1/3}
+\]
+
+must **not** be treated as a universal GEO identity.
+
+The structural node
+
+\[
+\eta=\frac35
+\]
+
+and the application state
+
+\[
+\mu_{\mathrm{eff}}
+\]
+
+belong to different conceptual layers.
+
+---
+
+# 7. Bifocal conservative organization
+
+The conservative GEO state can be represented through two complementary
+foci,
+
+\[
+F_O=A,
+\]
+
+\[
+F_C=B.
+\]
+
+Their total satisfies
+
+\[
+F_O+F_C=T-L.
+\]
+
+In the lossless state,
+
+\[
+F_O+F_C=1.
+\]
+
+An admissible tangent redistribution preserves the total:
+
+\[
+\delta F_O+\delta F_C=0.
+\]
+
+The purpose of this construction is to represent complementary
+organization without violating the declared conservation relation.
+
+---
+
+# 8. Orthogonal projective layer
+
+The canonical two-dimensional projective transformation is represented
+by
+
+\[
+\boxed{
+Q=
+\frac{1}{\sqrt2}
+\begin{pmatrix}
+1 & 1\\
+-1 & 1
+\end{pmatrix}
+}
+\]
+
+with
+
+\[
+Q^TQ=I,
+\]
 
 and
 
-$$\eta_{\mathrm{GEO}}=0.600000000000000.$$
+\[
+\det Q=1.
+\]
 
-At the canonical node, the profile penalty is
+The associated angle is
 
-$$\Delta\chi^2_{\mathrm{GEO}}=0.001005928553.$$
+\[
+\boxed{
+\theta=\frac{\pi}{4}
+}.
+\]
 
-Thus, within this profile experiment, the canonical GEO node lies
-extremely close to the numerical likelihood minimum.
+Because \(Q\) is orthogonal, the full transformed state preserves the
+Euclidean norm and admits inverse reconstruction through
 
-Cross-configuration calculations give a median preferred value
+\[
+Q^{-1}=Q^T.
+\]
 
-$$\eta_{\mathrm{median}}=0.6.$$
+This does not imply that a complete original state can be reconstructed
+from one projected coordinate alone.
 
-The mean canonical-node penalty across the tested configurations is
-
-$$\left\langle\Delta\chi^2_{\mathrm{GEO}}\right\rangle=0.089354084305,$$
-
-with a maximum tested penalty of
-
-$$\Delta\chi^2_{\mathrm{GEO,max}}=0.267647200015.$$
-
-These configurations are not all statistically independent.
-
-Consequently, these calculations establish **compatibility and
-cross-configuration numerical stability** of the canonical
-$\eta=3/5$ node within the tested setup.
-
-They do not independently establish $\eta=3/5$ as a measured universal
-constant of nature.
+The distinction between complete transformed information and a single
+observable projection is essential.
 
 ---
 
-# 6. MCMC convergence and numerical stability
+# 9. Harmonic duality
 
-The dedicated GEO cosmological study contains matched short-chain and
-extended-chain calculations.
+The projective layer admits the complementary harmonic pair
 
-The principal extended GEO-29 calculation used four MPI chains with
-30,000 stored rows per chain:
+\[
+H_O=\cos^2\theta,
+\]
 
-$$4\times30,000=120,000$$
+\[
+H_C=\sin^2\theta,
+\]
 
-stored chain rows.
+with
 
-The final recorded convergence diagnostic was
+\[
+H_O+H_C=1.
+\]
 
-$$R-1=0.017309752619.$$
+At the canonical angle
 
-A stricter pre-specified target was
+\[
+\theta=\frac{\pi}{4},
+\]
 
-$$R-1<0.01.$$
+one obtains
 
-That strict stopping criterion was not formally reached before the
-sample cap.
+\[
+H_O=H_C=\frac12.
+\]
 
-For this reason, GEO-29 is reported as an **extended, numerically
-stable / near-converged MCMC calculation**, rather than as a chain that
-formally satisfies the stricter $R-1<0.01$ criterion.
+Two useful derived quantities are
 
-The shorter GEO-28B and extended GEO-29 runs nevertheless give closely
-consistent posterior results.
+\[
+D_{\mathrm{bal}}=\cos(2\theta)
+\]
 
-For GEO-28B,
+and
 
-$$H_{0,\mathrm{GEO}}=73.3998\pm0.4998\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
+\[
+D_{\mathrm{coup}}
+=
+\frac14\sin^2(2\theta).
+\]
 
-For GEO-29,
+At the canonical state,
 
-$$H_{0,\mathrm{GEO}}=73.3882\pm0.5292\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
+\[
+D_{\mathrm{bal}}=0,
+\]
 
-This agreement provides an internal numerical stability check while
-the exact convergence diagnostic remains explicitly reported.
+\[
+D_{\mathrm{coup}}=\frac14.
+\]
 
----
+These quantities describe the mathematical projective/harmonic
+organization of the framework.
 
-# 7. Reproducibility package
-
-The cosmological MCMC repository contains the publication-oriented
-reproducibility package used for the current GEO cosmological
-validation.
-
-It includes:
-
-- matched GEO and $\Lambda$CDM Cobaya configurations;
-- Planck/NPIPE likelihood configuration;
-- MCMC checkpoints;
-- proposal covariance matrices;
-- convergence histories;
-- posterior summaries;
-- best-point comparisons;
-- machine-readable CSV tables;
-- publication-quality figures;
-- profile-likelihood validation of $\eta$;
-- cross-configuration tests;
-- software environment freeze;
-- Python dependency freeze;
-- CLASS source hashes;
-- GEO-modified source hashes;
-- SHA256 chain manifests;
-- consistency-audit scripts;
-- reproducibility documentation.
-
-The frozen publication audit reports:
-
-```text
-AUDIT PASSED
-All frozen numerical quantities are internally consistent.
-```
-
-The archived release is available at:
-
-https://doi.org/10.5281/zenodo.22103137
+They should not automatically be identified with physical observables.
 
 ---
 
-# 8. Technical validation kit — CLASS
+# 10. Higher-dimensional transport representation
 
-The public implementation of GEO-related cosmological calculations for
-CLASS v3.x is available separately.
+The mature GEO architecture also studies a five-dimensional transport
+representation,
 
-👉 **GEO Launch Kit:**  
-https://github.com/LeoTorreblanca/GEO_Launch_Kit
+\[
+M_5,
+\]
 
-The GEO Launch Kit contains source modifications and diagnostic scripts
-used in the development and reproducibility analysis of GEO-Lens
-calculations.
+organized mathematically as a \(3+2\) block structure.
 
-It is released under the MIT License for independent inspection,
-testing, reproduction, and scientific discussion.
+The five coordinates are mathematical transport coordinates.
 
----
+They are **not automatically five physical dimensions or five specific
+physical observables**.
 
-## CLASS-GEO-Lens
+Any physical interpretation requires an explicit application layer.
 
-Public implementation:
+A spectral quantity associated with the transport operator is defined by
 
-https://github.com/LeoTorreblanca/CLASS-GEO-Lens
+\[
+\boxed{
+\Phi=\rho(M_5)
+}
+\]
 
-Archived release:
+where
 
-https://doi.org/10.5281/zenodo.20529415
+\[
+\rho(M_5)=\max_i|\lambda_i|
+\]
 
-CLASS-GEO-Lens should be distinguished from the dedicated
-GEO-Cosmology-MCMC statistical validation repository.
+is the spectral radius.
 
-The former provides a public implementation environment for the GEO
-cosmological mapping.
+A related projection coefficient can then be constructed as
 
-The latter contains the dedicated matched MCMC and profile-likelihood
-analysis.
+\[
+\boxed{
+\alpha=\frac{\Phi B}{\sqrt2}.
+}
+\]
 
----
-
-# 9. Scientific documentation
-
-The mathematical development of the GEO Hubble realization is
-documented through the technical sheets included in this repository.
-
-- [PDF 1 — Hubble Tension 12-Digit Auditing](./docs/mathematics/01-HUBBLE_12_DIG_GEO_response_EN.pdf)
-- [PDF 2 — Reconstructive vs Strong Prediction Levels](./docs/mathematics/02-HUBBLE_MATHS_EN.pdf)
-- [PDF 3 — GEO Bridge & Coupling Metrics](./docs/mathematics/03-GEO_BRIDGE_EXPLAINED_EN.pdf)
-- [PDF 4 — Universal Alpha Derivation Thesis](./docs/mathematics/04-GEO_ALPHA_FINAL_DEMONSTRATION_EN.pdf)
-- [PDF 5 — Final Cosmological Closure Report](./docs/mathematics/05-FINAL_RESOLUTION_HUBBLE_EN.pdf)
-
-These documents describe the mathematical and historical development of
-the framework.
-
-The dedicated MCMC repository should be used for the current
-statistical cosmological validation.
+The detailed closure used to construct a particular \(M_5\), including
+residual-memory variables, belongs to the executable realization of the
+operator and should be distinguished from the primitive conservation
+identities of the framework.
 
 ---
 
-# 10. GEO experimental test series
+# 11. What is structural and what is application-dependent
 
-The GEO framework developed through a sequence of numerical and
-geometric tests.
+The following distinction is central to GEO.
 
-## PRUEBA 1 — SOP emergence
+## Structural definitions
 
-Initial exploration of:
+Examples include
 
-- growth suppression;
-- stable $S_8$ regions;
-- emergence of an effective geometric fraction;
-- complementary-sector interpretation.
+\[
+A+B+L=T,
+\]
 
----
+\[
+T=1,
+\]
 
-## PRUEBA 2 — Geometric node analysis
+\[
+\eta=\frac35,
+\]
 
-Analysis of preferred geometric regions including:
+\[
+f_c=\sqrt{\eta},
+\]
 
-- $3/4$;
-- $\sqrt{3/5}$;
-- $\pi/4$;
-- effective geometric bands.
+the orthogonal operator \(Q\), and the spectral definition
 
----
+\[
+\Phi=\rho(M_5).
+\]
 
-## PRUEBA 3 — Architectural transfer structure
+## General response law
 
-Investigation of:
+The effective-state relation is
 
-- geometric partition;
-- active/complementary transfer;
-- efficiency structure;
-- architectural consistency.
+\[
+R^3=\mu_{\mathrm{eff}}.
+\]
 
----
+The value of \(\mu_{\mathrm{eff}}\) must be supplied by an application
+or model layer.
 
-## PRUEBA 4 — Prediction law
+## Application hypotheses
 
-Exploration of the radial prediction relation
+A physical application may propose a specific identification of
+\(\mu_{\mathrm{eff}}\), a projected coordinate, or another GEO quantity
+with a physical observable.
 
-$$R=\mu^{1/3}$$
+Such an identification is an **application hypothesis**.
 
-and its transfer consistency.
+It is not automatically a universal mathematical identity of GEO.
 
-The relevant state is $\mu$.
-
-The historical expression $R=\eta^{1/3}$ should not be treated as the
-general GEO radial identity.
-
----
-
-## PRUEBA 5 — Observational consistency
-
-Exploratory consistency analysis involving:
-
-- $S_8$;
-- effective suppression;
-- $E_G$;
-- geometric prediction stability;
-- cross-observable behavior.
-
-These exploratory stages motivated the later dedicated profile and
-MCMC analyses.
+This separation is used throughout the current research program.
 
 ---
 
-# 11. Multi-planetary empirical validation
+# 12. Historical computational implementation: GEO / CLASS kit
 
-The GEO framework has also been explored outside the primary
-cosmological Hubble application.
+An important stage in the development of GEO was its implementation as
+a modified **CLASS v3.x** computational environment.
 
-A dedicated empirical study analyzes orbital architectures in
-multi-planetary systems using data derived from the NASA Exoplanet
-Archive.
+This repository historically served as the public entry point for that
+work.
 
-👉 **GEO Exoplanets Validation:**  
-https://github.com/LeoTorreblanca/GEO-Exoplanets-Validation
+The initial GEO computational kit included source modifications,
+diagnostic scripts, numerical experiments, and reproducibility material
+designed to explore the consequences of GEO-inspired modifications in a
+standard cosmological code base.
 
-The study investigates geometric transition statistics, orbital
-spacing, node structure, and possible architecture-dependent
-discontinuities.
+That implementation played two important roles:
 
-Reported exploratory results include:
+1. it provided a concrete numerical environment in which exploratory GEO
+   hypotheses could be tested; and
 
-- analysis of 2,099 multi-planetary systems with $N\geq3$;
-- a reported 98.09% coherence rate under the adopted transition
-  definition;
-- changes in transition frequency around higher-multiplicity systems;
-- concentration of selected internal transition locations.
+2. it supplied numerical provenance for the transition from the earlier
+   GDD/GDDv2/SOP investigations toward the later mathematical
+   formalization.
 
-These results belong to a separate empirical application of GEO and
-should not be treated as statistically independent evidence for the
-cosmological Hubble realization without an explicit joint statistical
-model.
+The CLASS-based implementation should therefore be understood as a
+historical and computational layer of the GEO research program.
 
----
+It is not the definition of GEO itself.
 
-# 12. Spanish technical reconstruction
+The mathematical architecture can be studied independently of CLASS,
+while cosmological applications may continue to use CLASS or other
+numerical environments as explicit application layers.
 
-A dedicated Spanish-language technical reconstruction of the framework
-is maintained separately.
-
-👉 **GEO — Geometría Oculta ESP:**  
-https://github.com/LeoTorreblanca/GEO-Geometria-Oculta-ESP
-
-This repository provides a cleaner Spanish-language presentation of
-the framework, its geometric architecture, and its experimental
-development.
+Historical numerical outputs contained in earlier releases should also
+not be interpreted automatically as current canonical GEO predictions.
 
 ---
 
-# 13. Current scientific status
+# 13. GEO External Operator
 
-The current public GEO program now contains several distinct levels of
-evidence and development.
+The mathematical architecture has subsequently been implemented in a
+separate executable project:
 
-### Mathematical framework
+**GEO External Operator**
 
-GEO proposes a constrained internal geometric architecture involving
-partition, projection, complementary sectors, effective states, and
-geometric transfer operators.
+Repository:
 
-### Historical Hubble reconstruction
+https://github.com/LeoTorreblanca/GEO-External-Operator
 
-The canonical Hubble operator chain maps
+The External Operator is intended to provide a compact executable
+realization of the GEO mathematical chain outside the original
+cosmological development environment.
 
-$$67.40\longrightarrow73.040000\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
+Conceptually, the implemented chain follows the structure
 
-This is the original fixed-input GEO reconstruction.
+\[
+T
+\rightarrow
+(A,B,L)
+\rightarrow
+(\eta,f_c)
+\rightarrow
+\mu_{\mathrm{eff}}
+\rightarrow
+R
+\rightarrow
+\text{bifocal state}
+\rightarrow
+Q
+\rightarrow
+\text{harmonic layer}
+\rightarrow
+M_5
+\rightarrow
+\Phi
+\rightarrow
+\alpha.
+\]
 
-### Profile-likelihood validation
+Its purpose is reproducibility and mathematical auditing.
 
-When the relevant efficiency parameter is allowed to vary in the
-profile experiment,
+For declared inputs it can test, among other properties,
 
-$$\eta_{\mathrm{best}}=0.599212873731233,$$
+- conservation;
+- the canonical coupling relation;
+- the effective-state radial law;
+- orthogonality;
+- harmonic closure;
+- norm preservation;
+- inverse reconstruction;
+- transport construction;
+- spectral evaluation.
 
-very close to the canonical prediction
+Successful numerical closure demonstrates consistency between the
+declared equations and their executable implementation.
 
-$$\eta_{\mathrm{GEO}}=0.6.$$
+It does **not**, by itself, establish that a physical system must obey
+the GEO mapping.
 
-### Cosmological MCMC validation
-
-The Planck/NPIPE MCMC calculation independently samples the primitive
-cosmological scale and obtains
-
-$$H_{0,\mathrm{primitive}}=67.7213\pm0.4884\;\mathrm{km\,s^{-1}\,Mpc^{-1}},$$
-
-which the fixed GEO operator maps to
-
-$$H_{0,\mathrm{GEO}}=73.3882\pm0.5292\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-Within the exact matched joint likelihood experiment, the best sampled
-comparison gives
-
-$$\Delta\chi^2_{\mathrm{joint}}=-19.938923.$$
-
-These are stronger numerical tests than the original fixed-input
-reconstruction because the primitive cosmological parameter is sampled
-within an explicit likelihood analysis.
-
-They remain tests of the proposed GEO realization rather than proof of
-the framework as a fundamental physical theory.
-
----
-
-# 14. Present limitations and next tests
-
-Earlier versions of the GEO documentation identified a full
-cosmological MCMC analysis as an outstanding validation step.
-
-**That step has now been performed.**
-
-The dedicated GEO-Cosmology-MCMC repository provides the current
-Planck/NPIPE MCMC validation and its reproducibility package.
-
-The principal remaining limitations are therefore no longer the
-absence of an MCMC analysis.
-
-They are:
-
-1. **Stricter chain convergence**
-
-   The extended run reached
-
-   $$R-1=0.017309752619,$$
-
-   but not the stricter target
-
-   $$R-1<0.01.$$
-
-2. **Independent cosmological datasets**
-
-   The GEO mapping should be confronted with additional independent
-   BAO, supernova, growth, weak-lensing, and other cosmological
-   likelihood combinations.
-
-3. **Alternative local-$H_0$ likelihoods**
-
-   The sensitivity of the result to different local distance-ladder
-   determinations should be quantified.
-
-4. **Bayesian model comparison**
-
-   The reported $\Delta\chi^2$ comparison is not a Bayesian evidence
-   calculation.
-
-   Bayesian evidence, information criteria where appropriate, and
-   explicit treatment of model complexity remain future tests.
-
-5. **Out-of-sample prediction**
-
-   Additional observables should be predicted before being included in
-   parameter estimation.
-
-6. **Physical derivation of channel realization**
-
-   The identification
-
-   $$\mu_H=\eta$$
-
-   remains a physical hypothesis of the Hubble-channel realization and
-   should be derived or independently tested beyond its present
-   numerical performance.
-
-7. **Independent replication**
-
-   External reproduction of the complete pipeline remains essential.
-
-8. **Broader theoretical embedding**
-
-   The relation between the GEO operator architecture and established
-   relativistic field equations, perturbation theory, conservation
-   principles, and fundamental dynamics requires further formal
-   development.
-
-These limitations define the next stage of the GEO research program.
+The External Operator should therefore be regarded as an executable
+reference layer of the framework rather than as independent empirical
+evidence for GEO.
 
 ---
 
-# 15. Interpretation policy
+# 14. GEO-Hubble as a separate application
 
-The numerical results in this repository and its associated validation
-repositories should be interpreted according to the exact experiment
-that produced them.
+The Hubble problem is not part of the historical origin of GEO and is
+not used here to define its canonical mathematical architecture.
+
+It is treated as a separate physical application.
+
+The dedicated **GEO-Hubble Geometric Projection** work evaluates a
+specific projective hypothesis constructed from the canonical GEO
+architecture.
+
+That separation is deliberate:
+
+\[
+\text{GEO architecture}
+\rightarrow
+\text{application adapter}
+\rightarrow
+\text{Hubble hypothesis}
+\rightarrow
+\text{cosmological test}.
+\]
+
+The general GEO relation remains
+
+\[
+R^3=\mu_{\mathrm{eff}},
+\]
+
+whereas a Hubble application must explicitly state whatever
+application-specific effective state it proposes.
+
+Consequently, no Hubble-channel identification should be promoted to a
+universal GEO identity.
+
+The purpose of the dedicated Hubble project is to determine what follows
+when a declared projective mapping is applied and tested under specified
+cosmological assumptions.
+
+It should therefore be read as an **evaluation of a GEO projective
+hypothesis**, not as the definition of the GEO framework itself.
+
+Historical Hubble calculations previously included directly in this
+repository belong to the provenance of the research program and should
+not be interpreted as the current canonical formulation.
+
+---
+
+# 15. Separation of research layers
+
+For clarity, the GEO research program distinguishes the following
+levels.
+
+| Layer | Role |
+|---|---|
+| GDD | Initial exploratory dual representation |
+| GDDv2 | Reduced phenomenological representation |
+| SOP | Active/complementary numerical exploration |
+| GEO | Geometric consolidation and canonical structural node |
+| GEO-FOUNDATIONS | Formal mathematical architecture |
+| GEO / CLASS kit | Historical cosmological implementation and numerical test environment |
+| GEO External Operator | Separate executable realization of the mathematical operator chain |
+| GEO-Hubble | Application-specific evaluation of a projective Hubble hypothesis |
+| Cosmological inference | Statistical tests performed under explicitly declared datasets, likelihoods, and priors |
+
+These layers are related historically and computationally, but they are
+not interchangeable.
 
 In particular:
 
-- $\eta=0.6$ is the canonical GEO value;
-- the profile calculations show compatibility with that value but do
-  not independently establish a new universal constant;
-- $R=\mu^{1/3}$ is the canonical radial law;
-- $\mu_H=\eta$ is the specific Hubble-channel realization tested here;
-- $H_0=73.040000$ is the historical fixed-input GEO reconstruction;
-- $H_{0,\mathrm{GEO}}=73.3882\pm0.5292$ is the extended MCMC posterior
-  result;
-- $\Delta\chi^2_{\mathrm{joint}}=-19.938923$ refers to the exact matched
-  likelihood comparison documented in GEO-Cosmology-MCMC;
-- the reported $\Delta\chi^2$ is not a Bayesian evidence ratio;
-- the longest MCMC run is near-converged / numerically stable under the
-  reported diagnostic, but did not satisfy the stricter
-  $R-1<0.01$ target.
-
-This separation is maintained to make the framework falsifiable,
-auditable, and reproducible.
+- historical numerical recurrence is not a mathematical proof;
+- a mathematical definition is not empirical validation;
+- executable closure is not physical confirmation;
+- an application hypothesis is not a universal identity;
+- a deterministic consequence of an application is not statistical
+  evidence by itself;
+- a likelihood improvement is not automatically a fundamental physical
+  explanation.
 
 ---
 
-# 16. Repository ecosystem
+# 16. Scientific interpretation
 
-The public GEO research program is distributed across dedicated
-repositories so that theoretical development, implementation, and
-numerical validation can be inspected separately.
+GEO should presently be understood as a developing mathematical and
+computational framework.
 
-### Main framework
+The current architecture provides:
 
-**GEO — Hidden Geometry Framework**
+- a conservative active/complementary state;
+- a canonical structural node;
+- a general effective-state radial relation;
+- bifocal organization;
+- an orthogonal projective layer;
+- harmonic duality;
+- a higher-dimensional transport representation;
+- spectral invariants;
+- executable reconstruction and closure tests;
+- explicit boundaries between mathematical structure and physical
+  application.
 
-https://github.com/LeoTorreblanca/GEO-hidden-geometry-framework
+The framework does not, merely from these definitions, establish a
+complete theory of gravity.
 
-Framework archive:
+It does not derive electromagnetism and gravity from one another.
 
-https://doi.org/10.5281/zenodo.20225304
+It does not require negative physical mass or negative physical energy.
 
-### Cosmological MCMC validation
+It does not imply that every effective state satisfies
 
-**GEO Cosmology MCMC Validation**
+\[
+\mu_{\mathrm{eff}}=\eta.
+\]
 
-https://github.com/LeoTorreblanca/GEO-Cosmology-MCMC
+It does not identify the coordinates of the mathematical transport
+operator automatically with physical observables.
 
-Archived release:
-
-https://doi.org/10.5281/zenodo.22103137
-
-### CLASS implementation
-
-**CLASS-GEO-Lens**
-
-https://github.com/LeoTorreblanca/CLASS-GEO-Lens
-
-Archived release:
-
-https://doi.org/10.5281/zenodo.20529415
-
-### GEO Launch Kit
-
-https://github.com/LeoTorreblanca/GEO_Launch_Kit
-
-### Exoplanet validation
-
-https://github.com/LeoTorreblanca/GEO-Exoplanets-Validation
-
-### Spanish technical reconstruction
-
-https://github.com/LeoTorreblanca/GEO-Geometria-Oculta-ESP
+Those questions require additional physical models and empirical tests.
 
 ---
 
-# 17. Official channels
+# 17. Provenance and non-retroactive interpretation
 
-[![X Follow](https://img.shields.io/twitter/follow/GEO_Hidden?style=for-the-badge&logo=x&logoColor=white&color=000000)](https://x.com/GEO_Hidden)
+GEO has evolved through several conceptual and computational stages.
 
-[![OSF Registration](https://img.shields.io/badge/OSF-Registration-blue?style=for-the-badge)](https://osf.io/yhdmz)
+For this reason, equations appearing in historical releases should be
+interpreted in the context in which they were introduced.
 
----
+Later mathematical definitions must not be projected backward onto
+GDD or GDDv2 as though they had been present from the beginning.
 
-# 18. Repository structure
+Likewise, historical exploratory numerical results must not be promoted
+retroactively to independent predictions.
 
-```text
-scripts/  -> Reproducible GEO scripts
-figures/  -> Generated plots and visual outputs
-results/  -> Numerical outputs and console logs
-pdf/      -> Individual technical reports
-paper/    -> GEO manuscript and preprint versions
-docs/     -> Mathematical and technical documentation
-```
+The canonical node
 
-Dedicated large-scale cosmological MCMC products are maintained in
-GEO-Cosmology-MCMC rather than duplicated in this repository.
+\[
+\eta=\frac35
+\]
 
----
-
-# 19. Reproducibility
-
-The GEO project follows a public reproducibility-oriented structure.
-
-The main framework contains the mathematical and experimental
+was motivated through the historical numerical and geometric sequence
+described above and was subsequently incorporated into the mature GEO
 architecture.
 
-Dedicated validation repositories contain the corresponding numerical
-implementations, configurations, results, and diagnostic products.
+The current mathematical framework then gives that node a structural
+role independent of any particular Hubble likelihood calculation.
 
-For the cosmological MCMC study, the archived reproducibility package
-contains:
-
-- source and configuration hashes;
-- environment information;
-- dependency freeze;
-- chain manifests;
-- MCMC diagnostics;
-- covariance matrices;
-- profile-likelihood source tables;
-- publication figures;
-- numerical result tables;
-- consistency auditing.
-
-The archived cosmological validation release is:
-
-**Torreblanca, Leonel (2026). GEO Cosmology MCMC Validation. Zenodo.**
-
-https://doi.org/10.5281/zenodo.22103137
+This repository preserves that developmental provenance while directing
+current mathematical and application-specific work to their appropriate
+layers.
 
 ---
 
-# 20. Citation
+# 18. Reproducibility philosophy
 
-When referring to the general GEO framework, use the principal
-framework archive and associated paper record.
+The GEO project follows a separation between:
 
-📄 **Framework / Paper:**
+\[
+\text{provenance},
+\]
 
-https://doi.org/10.17605/OSF.IO/YHDMZ
+\[
+\text{definition},
+\]
 
-💻 **Framework Code:**
+\[
+\text{implementation},
+\]
 
-https://doi.org/10.5281/zenodo.20225304
+\[
+\text{application},
+\]
 
-When referring specifically to the cosmological MCMC result, cite:
+and
 
-**Torreblanca, Leonel (2026). GEO Cosmology MCMC Validation. Version
-1.0.0. Zenodo.**
+\[
+\text{empirical inference}.
+\]
 
-https://doi.org/10.5281/zenodo.22103137
+A reproducible implementation should make it possible to determine
+exactly which layer a reported result belongs to.
 
-When referring specifically to the CLASS-GEO-Lens implementation, use:
+Where possible, computational releases should therefore provide:
 
-https://doi.org/10.5281/zenodo.20529415
+- explicit equations;
+- fixed numerical inputs;
+- source-code provenance;
+- versioned dependencies;
+- deterministic regression tests;
+- generated numerical outputs;
+- clear application assumptions;
+- separation between fitted and fixed quantities.
 
----
-
-# 21. License
-
-Unless otherwise indicated for third-party materials or external
-datasets, the public GEO software and repository materials are released
-under the MIT License.
-
-See the corresponding `LICENSE` files in each repository.
-
-External cosmological likelihoods and observational datasets retain
-their original licenses, citations, and distribution conditions.
-
----
-
-# 22. Scientific scope
-
-GEO remains an open exploratory research framework.
-
-The current results establish that the proposed geometric architecture
-has generated specific, falsifiable numerical relations that can be
-tested with standard cosmological inference tools.
-
-The current cosmological analysis shows that:
-
-$$\eta_{\mathrm{best}}\approx0.59921$$
-
-is numerically close to the canonical
-
-$$\eta_{\mathrm{GEO}}=0.6,$$
-
-and that the Planck/NPIPE primitive posterior
-
-$$H_{0,\mathrm{primitive}}\approx67.72$$
-
-is mapped by the fixed GEO operator to
-
-$$H_{0,\mathrm{GEO}}\approx73.39\;\mathrm{km\,s^{-1}\,Mpc^{-1}}.$$
-
-Within the exact matched likelihood configuration tested so far, the
-best sampled GEO realization also gives a lower joint chi-square than
-the corresponding $\Lambda$CDM + local-$H_0$ control.
-
-These results warrant further independent testing.
-
-They do not remove the need for stricter convergence, independent
-datasets, Bayesian model comparison, theoretical derivation, and
-external replication.
+This structure is intended to make both confirmation and falsification
+of individual GEO claims easier.
 
 ---
 
-## Author
+# 19. Repository role
 
-**Leonel Hernan Torreblanca**
+This repository is the **historical root repository of GEO — Hidden
+Geometry**.
 
-GEO — Hidden Geometry Framework
+Its purpose is to preserve and document:
 
-2026
+1. the origin of the research question;
+2. the GDD/GDDv2/SOP developmental path;
+3. the numerical provenance of the canonical GEO node;
+4. the transition to the current geometric architecture;
+5. the original CLASS-based computational implementation;
+6. the relationship between the original framework and later,
+   more specialized GEO repositories.
+
+The repository should not be interpreted as a container in which every
+historical experiment represents the current canonical theory.
+
+Specialized later work is maintained separately so that mathematical
+architecture, executable implementation, and physical applications can
+be audited without conflating their evidential roles.
+
+---
+
+# 20. Related GEO projects
+
+## GEO-FOUNDATIONS
+
+Formal mathematical development of the mature GEO architecture,
+including conservation, effective-state structure, projective geometry,
+transport operators, and mathematical closure.
+
+## GEO External Operator
+
+Separate executable implementation of the GEO operator architecture:
+
+https://github.com/LeoTorreblanca/GEO-External-Operator
+
+Its role is mathematical and computational reproducibility.
+
+## GEO-Hubble Geometric Projection
+
+Dedicated evaluation of a Hubble-channel projective hypothesis derived
+from a declared GEO application adapter.
+
+This project is intentionally separated from the root framework so that
+the general GEO architecture does not depend on the validity of one
+cosmological application.
+
+## GEO cosmological / MCMC work
+
+Dedicated cosmological environments test declared GEO realizations using
+standard numerical and statistical tools such as CLASS and Cobaya.
+
+These calculations constitute application-level tests rather than
+definitions of the underlying mathematical framework.
+
+---
+
+# 21. Canonical relations at a glance
+
+The principal relations of the current framework include
+
+\[
+\boxed{
+A+B+L=T,\qquad T=1
+}
+\]
+
+and, for the canonical lossless state,
+
+\[
+\boxed{
+A=\eta=\frac35,
+\qquad
+B=1-\eta=\frac25,
+\qquad
+L=0.
+}
+\]
+
+The canonical coupling factor is
+
+\[
+\boxed{
+f_c=\sqrt{\eta}
+=\sqrt{\frac35}.
+}
+\]
+
+The general effective-state law is
+
+\[
+\boxed{
+R^3=\mu_{\mathrm{eff}},
+\qquad
+R=\mu_{\mathrm{eff}}^{1/3}.
+}
+\]
+
+The canonical projective operator is
+
+\[
+\boxed{
+Q=
+\frac1{\sqrt2}
+\begin{pmatrix}
+1&1\\
+-1&1
+\end{pmatrix},
+\qquad
+Q^TQ=I.
+}
+\]
+
+The harmonic pair satisfies
+
+\[
+\boxed{
+H_O=\cos^2\theta,
+\qquad
+H_C=\sin^2\theta,
+\qquad
+H_O+H_C=1.
+}
+\]
+
+At
+
+\[
+\theta=\frac{\pi}{4},
+\]
+
+\[
+H_O=H_C=\frac12.
+\]
+
+For the declared higher-dimensional transport operator,
+
+\[
+\boxed{
+\Phi=\rho(M_5)=\max_i|\lambda_i|
+}
+\]
+
+and a corresponding projection coefficient may be defined as
+
+\[
+\boxed{
+\alpha=\frac{\Phi B}{\sqrt2}.
+}
+\]
+
+These equations belong to different structural levels and should be
+interpreted according to the definitions given above.
+
+---
+
+# 22. Important radial-law clarification
+
+For avoidance of ambiguity, the current canonical radial relation is
+
+\[
+\boxed{
+R=\mu_{\mathrm{eff}}^{1/3}.
+}
+\]
+
+The expression
+
+\[
+R=\eta^{1/3}
+\]
+
+is not a universal GEO law.
+
+It can occur only when a particular application explicitly chooses
+
+\[
+\mu_{\mathrm{eff}}=\eta.
+\]
+
+This distinction should be preserved in future documentation,
+implementations, and application repositories.
+
+---
+
+# 23. Research status
+
+GEO remains an open research program.
+
+The mathematical architecture can be tested for internal consistency.
+
+Its executable realizations can be tested for reproducibility.
+
+Individual physical adapters can be tested against observations.
+
+Those are distinct questions.
+
+A failure of a particular application does not by itself invalidate a
+mathematical identity, just as successful numerical closure of the
+mathematics does not by itself establish a physical law.
+
+The objective of the project is therefore not to collapse these levels
+into a single claim, but to expose them clearly enough that each can be
+examined independently.
+
+---
+
+# 24. Citation and historical versions
+
+When citing GEO results, please identify the specific repository,
+release, or archived version from which the result was obtained.
+
+Because the framework has undergone substantial development, historical
+releases may contain exploratory equations, numerical experiments, or
+application-specific assumptions that are no longer part of the current
+canonical architecture.
+
+Version-specific citation is therefore strongly recommended.
+
+Historical artifacts should be retained for provenance when appropriate,
+but they should not be used as substitutes for the current definitions.
+
+---
+
+# 25. Author
+
+**Leonel Hernán Torreblanca**  
+Independent Researcher  
+Buenos Aires, Argentina
+
+GEO — Hidden Geometry
+
+---
+
+# 26. Summary
+
+GEO began with a mathematical question inspired by the differing
+structure of formally similar inverse-square laws.
+
+That question produced an exploratory dual representation.
+
+The dual representation evolved into an active/complementary numerical
+framework.
+
+Recurring numerical regions motivated comparison with simple geometric
+structures.
+
+That process led to the canonical structural node
+
+\[
+\boxed{
+\eta=\frac35.
+}
+\]
+
+The mature framework now separates the structural node from the general
+effective state,
+
+\[
+\boxed{
+R^3=\mu_{\mathrm{eff}},
+}
+\]
+
+and develops conservative, projective, harmonic, and transport
+operators around that distinction.
+
+The original CLASS-based kit records an important computational stage of
+this development.
+
+The GEO External Operator provides a separate executable realization of
+the mathematical architecture.
+
+GEO-Hubble is treated separately as an evaluation of a specific
+projective application hypothesis.
+
+This separation —
+
+\[
+\boxed{
+\text{history}
+\rightarrow
+\text{mathematics}
+\rightarrow
+\text{implementation}
+\rightarrow
+\text{application}
+\rightarrow
+\text{test}
+}
+\]
+
+— defines the current organization of the GEO research program.
