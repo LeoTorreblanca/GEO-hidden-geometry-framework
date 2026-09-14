@@ -207,7 +207,7 @@ $$
 Thus the canonical lossless GEO partition is
 
 $$
-\boxed{A=\frac35,\qquadB=\frac25.}
+\boxed{A=\frac35, \qquadB=\frac25.}
 $$
 
 This structural node became part of the mature mathematical
