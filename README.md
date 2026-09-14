@@ -100,28 +100,16 @@ In later GDDv2 and SOP investigations, the description was organized
 through an active and complementary partition of an effective sector,
 
 $$
-\rho_d
-=
-\rho_d^{\mathrm{active}}
-+
-\rho_d^{\mathrm{comp}},
+\rho_d=\rho_d^{\mathrm{active}}+\rho_d^{\mathrm{comp}},
 $$
 
 with
 
-$$
-\rho_d^{\mathrm{active}}
-=
-\xi\rho_d,
-$$
+$$\rho_d^{\mathrm{active}}=\xi\rho_d,$$
 
 and
 
-$$
-\rho_d^{\mathrm{comp}}
-=
-(1-\xi)\rho_d.
-$$
+$$\rho_d^{\mathrm{comp}}=(1-\xi)\rho_d.$$
 
 At this stage the effective coupling was not fixed geometrically in
 advance.
@@ -155,29 +143,16 @@ geometric values.
 Three useful reference candidates were
 
 $$
-f_c^{\mathrm{base}}
-=
-\frac34
-=
-0.75,
-$$
+f_c^{\mathrm{base}}=\frac34=0.75,$$
 
 $$
-f_c^{\mathrm{node}}
-=
-\sqrt{\frac35}
-=
-0.774596669241483\ldots,
+f_c^{\mathrm{node}}=\sqrt{\frac35}=0.774596669241483\ldots,
 $$
 
 and
 
 $$
-f_c^{\mathrm{ideal}}
-=
-\frac{\pi}{4}
-=
-0.785398163397448\ldots.
+f_c^{\mathrm{ideal}}=\frac{\pi}{4}=0.785398163397448\ldots.
 $$
 
 The comparison was retrospective.
