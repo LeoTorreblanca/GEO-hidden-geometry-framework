@@ -345,7 +345,7 @@ The canonical two-dimensional GEO transformation is represented by the
 orthogonal operator
 
 $$
-\boxed{Q=\frac{1}{\sqrt{2}}\begin{bmatrix}1 & 1 \\-1 & 1\end{bmatrix}}
+\boxed{Q=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}1 & 1 \cr -1 & 1\end{array}\right]}
 $$
 
 It satisfies
@@ -369,7 +369,7 @@ $$
 For a conservative vector
 
 $$
-\mathbf v=\begin{pmatrix}A\\B\end{pmatrix},
+\mathbf{v}=(A,B)^T
 $$
 
 the projected state is
@@ -381,7 +381,7 @@ $$
 The first projected coordinate is therefore
 
 $$
-A'=\frac{A+B}{\sqrt2}.
+A'=\frac{A+B}{\sqrt{2}}
 $$
 
 For the lossless normalized state,
