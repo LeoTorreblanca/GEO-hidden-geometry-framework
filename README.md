@@ -1169,22 +1169,9 @@ framework itself.
 The current organizational principle is therefore
 
 $$
-\boxed{
-\text{origin}
-\rightarrow
-\text{exploration}
-\rightarrow
-\text{geometry}
-\rightarrow
-\text{formalization}
-\rightarrow
-\text{implementation}
-\rightarrow
-\text{application}
-\rightarrow
-\text{test}.
-}
+\boxed{\text{origin}\rightarrow\text{exploration}\rightarrow\text{geometry}\rightarrow\text{formalization}\rightarrow\text{implementation}\rightarrow\text{application}\rightarrow\text{test}.}
 $$
+
 The central mathematical result emerging from this development is the
 **GEO Geometric Efficiency Law**:
 
