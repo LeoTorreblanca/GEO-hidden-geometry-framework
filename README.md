@@ -62,6 +62,99 @@ $$
 \text{GEO}.
 $$
 
+### Core result — GEO Geometric Efficiency Law
+
+The central mathematical result of the mature GEO architecture is the
+**GEO Geometric Efficiency Law (GEL)**.
+
+GEL organizes the framework as a closed five-stage transformation:
+
+$$
+\boxed{
+\text{conservative state}
+\rightarrow
+\text{effective-state geometrization}
+\rightarrow
+\text{projective/harmonic organization}
+\rightarrow
+\text{transport and spectral evaluation}
+\rightarrow
+\text{reconstruction and closure}
+}
+$$
+
+In executable form, the chain is
+
+$$
+(\eta,L,\mu_{\mathrm{eff}})
+\rightarrow
+R
+\rightarrow
+\text{geometric state}
+\rightarrow
+\text{projection}
+\rightarrow
+M_5
+\rightarrow
+\Phi
+\rightarrow
+\alpha
+\rightarrow
+\text{reconstruction}.
+$$
+
+The contribution of GEL is not any individual operation in isolation.
+Normalization, orthogonal projection, harmonic identities, eigenvalues,
+spectral radius, and inverse reconstruction are established mathematical
+tools.
+
+The GEO result is their explicit ordered composition into a conservative
+operator chain in which structural, effective-state, projective, transport,
+spectral, and reconstructed quantities remain separately identifiable and
+the final state can be tested for closure.
+
+The five stages are:
+
+1. **Conservation**
+   $$
+   A+B+L=1.
+   $$
+
+2. **Effective-state geometrization**
+   $$
+   R^3=\mu_{\mathrm{eff}},
+   \qquad
+   \mu_{\mathrm{eff}}\neq\eta
+   \quad\text{in general}.
+   $$
+
+3. **Projective and harmonic organization**
+   $$
+   \mathbf v'=Q\mathbf v,
+   \qquad
+   Q^TQ=I,
+   $$
+   together with the complementary harmonic representation.
+
+4. **Transport and spectral evaluation**
+   $$
+   \Phi=\rho(M_5),
+   \qquad
+   \alpha=\frac{\Phi B}{\sqrt2}.
+   $$
+
+5. **Reconstruction and closure**
+   $$
+   \widehat{\mathbf v}=Q^T\mathbf v',
+   $$
+   with numerical closure evaluated by the difference between the
+   reconstructed and supplied states.
+
+The term **Geometric Efficiency Law** refers here to this closed
+mathematical transformation internal to GEO. It is not, by itself, a claim
+of an empirically established universal law of nature. Any physical
+application requires an independently justified mapping to observables and
+corresponding empirical tests.
 ---
 
 ## 2. Initial mathematical exploration
@@ -602,7 +695,8 @@ repository:
 https://github.com/LeoTorreblanca/GEO-External-Operator
 
 The External Operator provides a standalone executable implementation of
-the GEO operator chain.
+the **GEO Geometric Efficiency Law**, preserving its complete five-stage
+operator chain.
 
 Its public state is based on explicit inputs such as
 
@@ -629,6 +723,9 @@ M_5
 \rightarrow
 \text{reconstruction}.
 $$
+
+This is the executable form of the five-stage Geometric Efficiency Law
+defined in the core GEO architecture.
 
 The operator is designed to test mathematical and computational
 consistency outside the original CLASS development environment.
@@ -754,9 +851,13 @@ datasets, and convergence properties of the corresponding experiment.
 ## 20. Scientific scope
 
 At its present stage, GEO should be understood as a developing
-mathematical and computational framework.
+mathematical and computational framework centered on the
+**GEO Geometric Efficiency Law**, a closed five-stage transformation
+connecting conservation, effective-state geometrization, projective and
+harmonic organization, transport and spectral evaluation, and inverse
+reconstruction with closure testing.
 
-The framework provides:
+The framework supporting this law provides:
 
 - a conservative active/complementary state;
 - a canonical structural node;
@@ -955,6 +1056,23 @@ $$
 These equations belong to different layers of the architecture and
 should be interpreted according to their definitions.
 
+Within GEO, these relations are connected through the
+**Geometric Efficiency Law** rather than treated as isolated identities:
+
+$$
+\boxed{
+\text{conservation}
+\rightarrow
+\text{geometrization}
+\rightarrow
+\text{projection}
+\rightarrow
+\text{transport/spectral evaluation}
+\rightarrow
+\text{reconstruction/closure}
+}
+$$
+
 ---
 
 ## 25. Historical provenance
@@ -1067,3 +1185,27 @@ $$
 \text{test}.
 }
 $$
+The central mathematical result emerging from this development is the
+**GEO Geometric Efficiency Law**:
+
+$$
+\boxed{
+\text{conservative state}
+\rightarrow
+\text{effective-state geometrization}
+\rightarrow
+\text{projective/harmonic organization}
+\rightarrow
+\text{transport and spectral evaluation}
+\rightarrow
+\text{reconstruction and closure}
+}
+$$
+
+Thus, the mature GEO framework is not defined by any one of its
+mathematical relations in isolation. Its central object is the closed
+operator chain connecting these stages while preserving explicit
+distinctions between structural parameters, effective states, transformed
+states, derived spectral quantities, and reconstructed states.
+
+This closed chain is the **Geometric Efficiency Law of GEO**.
